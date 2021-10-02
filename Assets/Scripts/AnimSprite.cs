@@ -52,7 +52,7 @@ public class AnimSprite : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = false;
         }
 
-        if ((Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) && isRunning)
+        if ((Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)))
         {
             isRunning = false;
             GetComponent<Animator>().SetBool("Running", false);

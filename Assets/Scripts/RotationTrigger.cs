@@ -72,19 +72,9 @@ public class RotationTrigger : MonoBehaviour
 
             Vector3 corner = triggerPos + transform.forward - transform.right;
             float distance = Vector3.Distance(corner, playerPos);
-            {
-                if (targetAngle > 0)
-                {
-                    float angle = (Mathf.Clamp(Vector3.SignedAngle(transform.right.normalized, (playerPos - corner).normalized, Vector3.up), 0, 90));
-                    player.transform.eulerAngles = new Vector3(0, currentAngle + angle, 0);
-                }
-                else
-                {
-                    float angle = (Mathf.Clamp(Vector3.SignedAngle(transform.right.normalized, (playerPos - corner).normalized, Vector3.up), 0, 90));
-                    player.transform.eulerAngles = new Vector3(0, currentAngle + angle, 0);
 
-                }
-            }
+            float angle = (Mathf.Clamp(Vector3.SignedAngle(transform.right.normalized, (playerPos - corner).normalized, Vector3.up), 0, 90));
+            player.transform.eulerAngles = new Vector3(0, currentAngle + angle, 0);
 
             Vector3 newPos = corner + (playerPos - corner).normalized;
             player.transform.position = new Vector3(newPos.x, player.transform.position.y, newPos.z);
