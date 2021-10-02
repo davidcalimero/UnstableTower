@@ -8,9 +8,11 @@ public class AnimSprite : MonoBehaviour
     private bool isJumping;
     private bool isFalling;
 
+    private Vector3 previousPosition;
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
             if (isFalling)
             {
@@ -25,7 +27,7 @@ public class AnimSprite : MonoBehaviour
                 GetComponent<Animator>().SetBool("Running", true);
             }
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
             if (isFalling)
             {
@@ -40,19 +42,32 @@ public class AnimSprite : MonoBehaviour
                 GetComponent<Animator>().SetBool("Running", true);
             }
         }
+
+        if (Input.GetKey(KeyCode.A) && (isJumping || isFalling))
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        if (Input.GetKey(KeyCode.D) && (isJumping || isFalling))
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+
         if ((Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) && isRunning)
         {
             isRunning = false;
             GetComponent<Animator>().SetBool("Running", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Space) && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
+            isRunning = false;
             isJumping = true;
             GetComponent<Animator>().SetBool("Jumping", true);
         }
 
-        if (Input.GetKeyUp(KeyCode.W) && isJumping)
+
+        Vector3 direction = (transform.position - previousPosition).normalized;
+        if (direction.y < 0 && isJumping)
         {
             isJumping = false;
             isFalling = true;
@@ -60,11 +75,12 @@ public class AnimSprite : MonoBehaviour
             GetComponent<Animator>().SetBool("Falling", true);
         }
 
-        if (isFalling && Input.GetKeyDown(KeyCode.S))
+        if (isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
             isFalling = false;
             GetComponent<Animator>().SetBool("Falling", false);
         }
 
+        previousPosition = transform.position;
     }
 }
