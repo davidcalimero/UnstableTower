@@ -12,6 +12,8 @@ public class AnimSprite : MonoBehaviour
 
     private void Update()
     {
+        Vector3 direction = (transform.position - previousPosition).normalized;
+
         if (Input.GetKey(KeyCode.A) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
             if (isFalling)
@@ -26,7 +28,7 @@ public class AnimSprite : MonoBehaviour
                 isRunning = true;
                 GetComponent<Animator>().SetBool("Running", true);
             }
-        }
+        }else
         if (Input.GetKey(KeyCode.D) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
             if (isFalling)
@@ -41,24 +43,23 @@ public class AnimSprite : MonoBehaviour
                 isRunning = true;
                 GetComponent<Animator>().SetBool("Running", true);
             }
-        }
+        }else
 
         if (Input.GetKey(KeyCode.A) && (isJumping || isFalling))
         {
             GetComponent<SpriteRenderer>().flipX = true;
-        }
+        }else
         if (Input.GetKey(KeyCode.D) && (isJumping || isFalling))
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
-
+        else
         if ((Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)))
         {
             isRunning = false;
             GetComponent<Animator>().SetBool("Running", false);
         }
-        Vector3 direction = (transform.position - previousPosition).normalized;
-
+        else
         if (direction.y > 0 && !transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
             isRunning = false;
@@ -66,21 +67,23 @@ public class AnimSprite : MonoBehaviour
             GetComponent<Animator>().SetBool("Jumping", true);
         }
 
-
+        else
         if (!isFalling && direction.y < 0 && !transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
-            print("JER");
             isJumping = false;
             isFalling = true;
             GetComponent<Animator>().SetBool("Jumping", false);
             GetComponent<Animator>().SetBool("Falling", true);
         }
-
-        if (isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
+        if (transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
+            isJumping = false;
             isFalling = false;
+            GetComponent<Animator>().SetBool("Jumping", false);
             GetComponent<Animator>().SetBool("Falling", false);
         }
+
+
 
         previousPosition = transform.position;
     }
