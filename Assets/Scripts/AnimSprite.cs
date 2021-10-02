@@ -57,8 +57,9 @@ public class AnimSprite : MonoBehaviour
             isRunning = false;
             GetComponent<Animator>().SetBool("Running", false);
         }
+        Vector3 direction = (transform.position - previousPosition).normalized;
 
-        if (Input.GetKeyDown(KeyCode.Space) && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
+        if (direction.y > 0 && !transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
             isRunning = false;
             isJumping = true;
@@ -66,9 +67,9 @@ public class AnimSprite : MonoBehaviour
         }
 
 
-        Vector3 direction = (transform.position - previousPosition).normalized;
-        if (direction.y < 0 && isJumping)
+        if (!isFalling && direction.y < 0 && !transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
+            print("JER");
             isJumping = false;
             isFalling = true;
             GetComponent<Animator>().SetBool("Jumping", false);
