@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
-    private float horizontalMove;
+    public float horizontalMove;
     private bool jump = false;
     public float runSpeed = 40;
 
@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool jump)
+	public void Move(float move, bool shouldJump)
 	{
         //only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump)
+		if (m_Grounded && shouldJump)
 		{
 			// Add a vertical force to the player.
 			m_Grounded = false;
@@ -110,16 +110,6 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonDown("Jump"))
         {
             jump = true;
-        }
-
-        if (Input.GetKeyDown("w"))
-        {
-            transform.RotateAround(transform.position, transform.up, -90f);
-        }
-
-        if (Input.GetKeyDown("s"))
-        {
-            transform.RotateAround(transform.position, transform.up, 90f);
         }
     }
 }
