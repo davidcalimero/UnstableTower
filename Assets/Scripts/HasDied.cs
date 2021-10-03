@@ -21,4 +21,17 @@ public class HasDied : MonoBehaviour
             FindObjectOfType<DisplayMessage>().HasDied();
         }
     }
+
+    private void Update()
+    {
+        if(transform.position.y < -10 && !hasDied)
+        {
+            hasDied = true;
+            blood.Play();
+            rigidBody.isKinematic = true;
+            rigidBody.useGravity = false;
+
+            FindObjectOfType<DisplayMessage>().HasDied();
+        }
+    }
 }

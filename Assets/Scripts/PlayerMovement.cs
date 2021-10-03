@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float horizontalMove;
     private bool jump = false;
+	private bool doubleJump = false;
     public float runSpeed = 40;
 
 	[Header("Events")]
@@ -76,6 +77,13 @@ public class PlayerMovement : MonoBehaviour
 			m_Grounded = false;
 			m_Rigidbody.AddForce(new Vector3(0f, m_JumpForce, 0f));
 		}
+
+		if (!m_Grounded && doubleJump)
+		{
+			// Add a vertical force to the player.
+			m_Grounded = false;
+			m_Rigidbody.AddForce(new Vector3(0f, m_JumpForce, 0f));
+		}
 	}
 
     void Update()
@@ -86,5 +94,10 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
         }
-    }
+
+		if (Input.GetButtonDown("Jump") && !m_Grounded && !doubleJump)
+		{
+			doubleJump = true;
+		}
+	}
 }
