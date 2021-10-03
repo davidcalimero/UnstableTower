@@ -43,8 +43,8 @@ public class DisplayMessage : MonoBehaviour
         uiSecondMessage.GetComponent<Text>().text = (coinToExtraJump - (coins % (float)coinToExtraJump)) + " coins to unlock one more extra jump!";
         if (coins % coinToExtraJump == 0 && coins > 0)
         {
-            FindObjectOfType<PlayerMovement>().maxJumps = Mathf.CeilToInt((coins / (float)coinToExtraJump) + 1);
-            extraJumpCounts.text = Mathf.CeilToInt((coins / (float)coinToExtraJump) + 2) + " Jumps";
+            //FindObjectOfType<PlayerMovement>().maxJumps = Mathf.CeilToInt((coins / (float)coinToExtraJump) + 1);
+            //extraJumpCounts.text = Mathf.CeilToInt((coins / (float)coinToExtraJump) + 2) + " Jumps";
         }
     }
 
