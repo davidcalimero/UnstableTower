@@ -9,6 +9,8 @@ public class AnimSprite : MonoBehaviour
     private bool isFalling;
 
     private Vector3 previousPosition;
+    public ParticleSystem particles;
+    public GameObject ground;
 
     private void Update()
     {
@@ -23,10 +25,12 @@ public class AnimSprite : MonoBehaviour
             }
 
             GetComponent<SpriteRenderer>().flipX = true;
+            ground.transform.localEulerAngles = new Vector3(0, 180, 0);
             if (!isRunning)
             {
                 isRunning = true;
                 GetComponent<Animator>().SetBool("Running", true);
+                particles.Play();
             }
         }else
         if (Input.GetKey(KeyCode.D) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
@@ -38,26 +42,34 @@ public class AnimSprite : MonoBehaviour
             }
 
             GetComponent<SpriteRenderer>().flipX = false;
+            ground.transform.localEulerAngles = new Vector3(0, 0, 0);
+
             if (!isRunning)
             {
                 isRunning = true;
                 GetComponent<Animator>().SetBool("Running", true);
+                particles.Play();
             }
-        }else
+        }
+        else
 
         if (Input.GetKey(KeyCode.A) && (isJumping || isFalling))
         {
             GetComponent<SpriteRenderer>().flipX = true;
-        }else
+            ground.transform.localEulerAngles = new Vector3(0, 180, 0);
+        }
+        else
         if (Input.GetKey(KeyCode.D) && (isJumping || isFalling))
         {
             GetComponent<SpriteRenderer>().flipX = false;
+            ground.transform.localEulerAngles = new Vector3(0, 0, 0);
         }
         else
         if ((Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)))
         {
             isRunning = false;
             GetComponent<Animator>().SetBool("Running", false);
+            particles.Stop();
         }
         else
         if (direction.y > 0 && !transform.parent.GetComponent<PlayerMovement>().m_Grounded)
@@ -65,6 +77,8 @@ public class AnimSprite : MonoBehaviour
             isRunning = false;
             isJumping = true;
             GetComponent<Animator>().SetBool("Jumping", true);
+            particles.Stop();
+
         }
 
         else
