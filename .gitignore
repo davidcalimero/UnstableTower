@@ -5,8 +5,8 @@
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-Assets/[Bb]uild/
-Assets/[Bb]uilds/
+/[Bb]uild/
+/[Bb]uilds/
 /[Ll]ogs/
 Assets/[Mm]emoryCaptures/
 .vscode/
