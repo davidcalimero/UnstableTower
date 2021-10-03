@@ -12,6 +12,9 @@ public class AnimSprite : MonoBehaviour
     public ParticleSystem particles;
     public GameObject ground;
 
+    public SoundManager jump;
+    public SoundManager run;
+
     private void Update()
     {
         Vector3 direction = (transform.position - previousPosition).normalized;
@@ -31,6 +34,7 @@ public class AnimSprite : MonoBehaviour
                 isRunning = true;
                 GetComponent<Animator>().SetBool("Running", true);
                 particles.Play();
+                run.PlaySound();
             }
         }
         else
@@ -50,6 +54,7 @@ public class AnimSprite : MonoBehaviour
                 isRunning = true;
                 GetComponent<Animator>().SetBool("Running", true);
                 particles.Play();
+                run.PlaySound();
             }
         }
         else
@@ -65,22 +70,24 @@ public class AnimSprite : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = false;
             ground.transform.localEulerAngles = new Vector3(0, 0, 0);
         }
-        else
-        if (Input.GetAxisRaw("Horizontal") == 0)
-        {
-            isRunning = false;
-            GetComponent<Animator>().SetBool("Running", false);
-            particles.Stop();
-        }
-        else
-        if (direction.y > 0 && !transform.parent.GetComponent<PlayerMovement>().m_Grounded)
+        else if(direction.y > 0 && !transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
             isRunning = false;
             isJumping = true;
             GetComponent<Animator>().SetBool("Jumping", true);
             particles.Stop();
+            jump.PlaySound();
+        }else
+        if (Input.GetAxisRaw("Horizontal") == 0)
+        {
+            isRunning = false;
+            GetComponent<Animator>().SetBool("Running", false);
+            particles.Stop();
+            run.StopSound();
 
         }
+        
+        
 
         else
         if (!isFalling && direction.y < 0 && !transform.parent.GetComponent<PlayerMovement>().m_Grounded)

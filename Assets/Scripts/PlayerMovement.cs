@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
 	public int maxJumps = 1;
     public float runSpeed = 40;
 
+	public SoundManager jumpSound;
+
 	[Header("Events")]
 	[Space]
 
@@ -104,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
 		{
 			doubleJumpCount++;
 			doubleJump = true;
+			jumpSound.PlaySound();
 		}
 	}
 }

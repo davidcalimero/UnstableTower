@@ -26,6 +26,7 @@ public class HasDied : MonoBehaviour
     {
         if(transform.position.y < -10 && !hasDied)
         {
+            GetComponent<SoundManager>().PlaySound();
             hasDied = true;
             blood.Play();
             rigidBody.isKinematic = true;

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2268553048103816202}
   - component: {fileID: 2268553048103816201}
   - component: {fileID: 2268553048103816197}
+  - component: {fileID: 7919781002916291456}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -109,6 +110,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610fa521306f7e847a38c42cd76f5c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7919781002916291456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2268553048103816200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e3d90c463606d4aa915482d2344f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioclip: {fileID: 8300000, guid: 184892bd480b8b04b9c455447a5d3ebd, type: 3}
+  isLoop: 0
 --- !u!1 &2268553048509759836
 GameObject:
   m_ObjectHideFlags: 0

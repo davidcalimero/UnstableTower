@@ -13,6 +13,7 @@ public class CatchCoin : MonoBehaviour
             hastriggered = true;
             GetComponentInChildren<Animation>().Play("coinCatch");
             FindObjectOfType<DisplayCoins>().AddCoin();
+            GetComponent<SoundManager>().PlaySound();
         }
     }
 
