@@ -33,9 +33,12 @@ public class UpdateMaterials : MonoBehaviour
             
             foreach(GameObject cube in cubes)
             {
-                Texture2D nextTexture = Mathf.FloorToInt(Random.Range(0, 4)) <= 1 ? tex1 : (Mathf.FloorToInt(Random.Range(0, 4)) <= 1 ? tex2 : (Mathf.FloorToInt(Random.Range(0, 4)) <= 1 ? tex3 : tex4));
-                if (cube.transform.childCount == 0)
-                    cube.GetComponent<MeshRenderer>().material.mainTexture = nextTexture;
+                if(cube != null)
+                {
+                    Texture2D nextTexture = Mathf.FloorToInt(Random.Range(0, 4)) <= 1 ? tex1 : (Mathf.FloorToInt(Random.Range(0, 4)) <= 1 ? tex2 : (Mathf.FloorToInt(Random.Range(0, 4)) <= 1 ? tex3 : tex4));
+                    if (cube.transform.childCount == 0)
+                        cube.GetComponent<MeshRenderer>().material.mainTexture = nextTexture;
+                }
             }
         }
     }

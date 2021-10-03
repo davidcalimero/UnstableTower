@@ -15,20 +15,46 @@ public class CubeMovement : MonoBehaviour
     public bool allowMoveBack = false;
 
     public Vector3 originalPosition;
-
     private float lastTick = 0;
     private float interval = 0;
+
+    private Vector2 lifeTime = new Vector2(5.0f, 15.0f);
+    private float height;
+    private float currentLifeTime;
+    public bool died = false;
 
     void Start()
     {
         originalPosition = transform.position;
         interval = Random.Range(moveInterval.x, moveInterval.y);
-        Move(true);
+        
+        height = transform.position.y;
+        currentLifeTime = Random.Range(lifeTime.x, lifeTime.y) + 5.0f * transform.position.y;
     }
 
     void Update()
     {
-        Move(false);
+        CheckDeath();
+        if(!died)
+        {
+            Move(false);
+        }  
+    }
+
+    void CheckDeath()
+    {
+        if(transform.position.y <= -10)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        
+        if(Time.realtimeSinceStartup - GameStuff.initialtime > currentLifeTime)
+        {
+            died = true;
+            StartCoroutine(Translate(new Vector3(transform.position.x, -10, transform.position.z)));
+        }
     }
 
     void Move(bool force)
@@ -97,7 +123,7 @@ public class CubeMovement : MonoBehaviour
     IEnumerator Translate(Vector3 destination)
     {
         float elapsedTime = 0;
-        while(elapsedTime < 1)
+        while(elapsedTime < 1 || transform.position.y != -10)
         {
             elapsedTime += Time.deltaTime;
             float x = Mathf.Lerp(transform.position.x, destination.x, elapsedTime);
