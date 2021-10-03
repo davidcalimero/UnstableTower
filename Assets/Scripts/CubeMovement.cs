@@ -14,29 +14,16 @@ public class CubeMovement : MonoBehaviour
     public bool allowMoveForward = false;
     public bool allowMoveBack = false;
 
-    public bool collidingUp = false;
-    public bool collidingDown = false;
-    public bool collidingLeft = false;
-    public bool collidingRight = false;
-    public bool collidingForward = false;
-    public bool collidingBack = false;
-
     public Vector3 originalPosition;
 
-    private float lastTick;
-    private float interval;
+    private float lastTick = 0;
+    private float interval = 0;
 
     void Start()
     {
-        collidingUp = CheckColision(Vector3.up);
-        collidingDown = CheckColision(Vector3.down);
-        collidingLeft = CheckColision(Vector3.left);
-        collidingRight = CheckColision(Vector3.right);
-        collidingForward = CheckColision(Vector3.forward);
-        collidingBack = CheckColision(Vector3.back);
-
         originalPosition = transform.position;
         interval = Random.Range(moveInterval.x, moveInterval.y);
+        Move();
     }
 
     void Update()
@@ -60,34 +47,34 @@ public class CubeMovement : MonoBehaviour
         List<Vector3> possibleMoves = new List<Vector3>();
         if(originalPosition == transform.position)
         {
-            if(!collidingUp && allowMoveUp)
+            if(!CheckColision(transform.up) && allowMoveUp)
             {
-                possibleMoves.Add(Vector3.up);
+                possibleMoves.Add(transform.up);
                 ++count;
             }
-            if(!collidingDown && allowMoveDown)
+            if(!CheckColision(-transform.up) && allowMoveDown)
             {
-                possibleMoves.Add(Vector3.down);
+                possibleMoves.Add(-transform.up);
                 ++count;
             }
-            if(!collidingLeft && allowMoveLeft)
+            if(!CheckColision(-transform.right) && allowMoveLeft)
             {
-                possibleMoves.Add(Vector3.left);
+                possibleMoves.Add(-transform.right);
                 ++count;
             }
-            if(!collidingRight && allowMoveRight)
+            if(!CheckColision(transform.right) && allowMoveRight)
             {
-                possibleMoves.Add(Vector3.right);
+                possibleMoves.Add(transform.right);
                 ++count;
             }
-            if(!collidingForward && allowMoveForward)
+            if(!CheckColision(transform.forward) && allowMoveForward)
             {
-                possibleMoves.Add(Vector3.forward);
+                possibleMoves.Add(transform.forward);
                 ++count;
             }
-            if(!collidingBack && allowMoveBack)
+            if(!CheckColision(-transform.forward) && allowMoveBack)
             {
-                possibleMoves.Add(Vector3.back);
+                possibleMoves.Add(-transform.forward);
                 ++count;
             }
         }
@@ -107,15 +94,15 @@ public class CubeMovement : MonoBehaviour
         StartCoroutine(Translate(transform.position + (direction * movement)));
     }
 
-    IEnumerator Translate(Vector3 destiny)
+    IEnumerator Translate(Vector3 destination)
     {
         float elapsedTime = 0;
         while(elapsedTime < 1)
         {
             elapsedTime += Time.deltaTime;
-            float x = Mathf.Lerp(transform.position.x, destiny.x, elapsedTime);
-            float y = Mathf.Lerp(transform.position.y, destiny.y, elapsedTime);
-            float z = Mathf.Lerp(transform.position.z, destiny.z, elapsedTime);
+            float x = Mathf.Lerp(transform.position.x, destination.x, elapsedTime);
+            float y = Mathf.Lerp(transform.position.y, destination.y, elapsedTime);
+            float z = Mathf.Lerp(transform.position.z, destination.z, elapsedTime);
             transform.position = new Vector3(x, y, z);
             yield return null;
         }
@@ -123,6 +110,6 @@ public class CubeMovement : MonoBehaviour
 
     bool CheckColision(Vector3 direction)
     {
-        return Physics.Raycast(transform.position, direction, 1.5f, LayerMask.GetMask("Map"));
+        return Physics.Raycast(transform.position, direction, 1.0f, LayerMask.GetMask("Map"));
     }
 }
