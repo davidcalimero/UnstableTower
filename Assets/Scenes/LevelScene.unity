@@ -712,7 +712,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 4306335230660120709, guid: 2eeb0a181f33e7c4eb8052a7efd84af4, type: 3}
+  - {fileID: 4630171879779134634, guid: 0df57ab614df0ce4585d27473728bb10, type: 3}
+  - {fileID: 7500503861457625416, guid: aa17bd278f3c63c4fa47d6440002fe87, type: 3}
+  - {fileID: 7354741715311241553, guid: 4e38c9474599b9643be580391f414098, type: 3}
+  - {fileID: 3418671164064897835, guid: 7fd38b251d7ccab4099105e74501995a, type: 3}
+  - {fileID: 7147157323685224142, guid: a21866f8fac40404cba52155368becbf, type: 3}
   target: {fileID: 28360854}
   player: {fileID: 1780424831}
   number_of_objects: 10

@@ -6,7 +6,6 @@ public class PiecesSpawner : MonoBehaviour
 {
     public GameObject[] prefabs;
     public Transform target;
-    public AnimationClip animation;
 
     public Transform player;
 
@@ -56,9 +55,7 @@ public class PiecesSpawner : MonoBehaviour
 
                 GameObject instance = Instantiate(prefab, position, Quaternion.Euler(Random.Range(0, 359), Random.Range(0, 359), Random.Range(0, 359)));
                 instance.AddComponent<DestroyBackroundCubes>();
-                Animation animator = instance.AddComponent<Animation>();
-                animator.clip = animation;
-                animator.playAutomatically = true;
+                
             }
         }
     }
