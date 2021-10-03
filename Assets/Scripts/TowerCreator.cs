@@ -40,5 +40,7 @@ public class TowerCreator : MonoBehaviour
 
         Instantiate(prefabs[blockIndex], new Vector3(-13, nextStep, 13), Quaternion.Euler(0.0f, angles[angleIndex], 0.0f));
         nextStep += step;
+
+        FindObjectOfType<UpdateMaterials>().UpdateListCubes();
     }
 }
