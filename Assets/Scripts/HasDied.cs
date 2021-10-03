@@ -13,6 +13,8 @@ public class HasDied : MonoBehaviour
     {
         if(other.CompareTag("cube") && !hasDied)
         {
+            GetComponent<SoundManager>().PlaySound();
+
             hasDied = true;
             blood.Play();
             rigidBody.isKinematic = true;

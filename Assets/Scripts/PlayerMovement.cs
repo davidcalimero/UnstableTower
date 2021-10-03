@@ -78,6 +78,8 @@ public class PlayerMovement : MonoBehaviour
 		// If the player should jump...
 		if (m_Grounded && shouldJump)
 		{
+			jumpSound.PlaySound();
+
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody.AddForce(new Vector3(0f, m_JumpForce, 0f));
@@ -85,6 +87,8 @@ public class PlayerMovement : MonoBehaviour
 
 		if (!m_Grounded && doubleJump)
 		{
+			jumpSound.PlaySound();
+
 			doubleJump = false;
 			// Add a vertical force to the player.
 			m_Grounded = false;
@@ -106,7 +110,6 @@ public class PlayerMovement : MonoBehaviour
 		{
 			doubleJumpCount++;
 			doubleJump = true;
-			jumpSound.PlaySound();
 		}
 	}
 }

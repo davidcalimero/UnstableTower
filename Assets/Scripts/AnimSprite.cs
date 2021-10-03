@@ -76,7 +76,6 @@ public class AnimSprite : MonoBehaviour
             isJumping = true;
             GetComponent<Animator>().SetBool("Jumping", true);
             particles.Stop();
-            jump.PlaySound();
         }else
         if (Input.GetAxisRaw("Horizontal") == 0)
         {
@@ -96,6 +95,7 @@ public class AnimSprite : MonoBehaviour
             isFalling = true;
             GetComponent<Animator>().SetBool("Jumping", false);
             GetComponent<Animator>().SetBool("Falling", true);
+            run.StopSound();
         }
         if (transform.parent.GetComponent<PlayerMovement>().m_Grounded || transform.position == previousPosition)
         {
