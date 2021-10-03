@@ -7,6 +7,9 @@ using UnityEngine.UI;
 public class DisplayMessage : MonoBehaviour
 {
     public Text uiSecondMessage;
+    public Text extraJumpCounts;
+
+    private int coinToExtraJump = 8;
 
     public IEnumerator Start()
     {
@@ -17,6 +20,8 @@ public class DisplayMessage : MonoBehaviour
         GetComponent<Text>().text = "Good luck!";
         yield return new WaitForSeconds(3);
         GetComponent<Text>().text = "";
+
+        extraJumpCounts.text = "2 Jumps";
     }
 
     public void HasDied()
@@ -35,10 +40,11 @@ public class DisplayMessage : MonoBehaviour
 
     public void UpdateSecondImage(int coins)
     {
-        uiSecondMessage.GetComponent<Text>().text = (5 - (coins % 5)) + " coins to unlock one more extra jump!";
-        if (coins % 5 == 0 && coins > 0)
+        uiSecondMessage.GetComponent<Text>().text = (coinToExtraJump - (coins % (float)coinToExtraJump)) + " coins to unlock one more extra jump!";
+        if (coins % coinToExtraJump == 0 && coins > 0)
         {
-            FindObjectOfType<PlayerMovement>().maxJumps = Mathf.FloorToInt(coins / 5);
+            FindObjectOfType<PlayerMovement>().maxJumps = Mathf.CeilToInt((coins / (float)coinToExtraJump) + 1);
+            extraJumpCounts.text = Mathf.CeilToInt((coins / (float)coinToExtraJump) + 2) + " Jumps";
         }
     }
 

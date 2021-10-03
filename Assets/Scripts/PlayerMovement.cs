@@ -86,7 +86,8 @@ public class PlayerMovement : MonoBehaviour
 			doubleJump = false;
 			// Add a vertical force to the player.
 			m_Grounded = false;
-			m_Rigidbody.AddForce(new Vector3(0f, m_JumpForce/2.0f, 0f));
+			m_Rigidbody.velocity = Vector3.zero;
+			m_Rigidbody.AddForce(new Vector3(0f, m_JumpForce, 0f));
 		}
 	}
 

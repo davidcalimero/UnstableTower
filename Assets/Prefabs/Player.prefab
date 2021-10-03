@@ -9710,6 +9710,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 5201652195841679821}
   m_Grounded: 0
   horizontalMove: 0
+  maxJumps: 1
   runSpeed: 40
   OnLandEvent:
     m_PersistentCalls:
