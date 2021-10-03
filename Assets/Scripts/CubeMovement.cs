@@ -18,7 +18,7 @@ public class CubeMovement : MonoBehaviour
     private float lastTick = 0;
     private float interval = 0;
 
-    private Vector2 lifeTime = new Vector2(0.0f, 7.0f);
+    private Vector2 lifeTime = new Vector2(0.0f, 1.0f);
     private float height;
     private float currentLifeTime;
     public bool died = false;
@@ -29,7 +29,7 @@ public class CubeMovement : MonoBehaviour
         interval = Random.Range(moveInterval.x, moveInterval.y);
         
         height = transform.position.y;
-        currentLifeTime = Random.Range(lifeTime.x, lifeTime.y) + (3.0f * transform.position.y) + GameStuff.timeUntilStart;
+        currentLifeTime = Random.Range(lifeTime.x, lifeTime.y) + (0.5f * transform.position.y);
     }
 
     void Update()
