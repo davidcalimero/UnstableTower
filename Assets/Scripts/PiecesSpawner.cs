@@ -10,9 +10,9 @@ public class PiecesSpawner : MonoBehaviour
     public Transform player;
 
     public int number_of_objects = 10;
-    public float min_object_distance = 5.0f;
-    public float min_target_distsnce = 40.0f;
-    public float max_target_distance = 50.0f;
+    public float min_object_distance = 20.0f;
+    public float min_target_distsnce = 30.0f;
+    public float max_target_distance = 60.0f;
 
     private float lastPlayerHeight = 0;
 

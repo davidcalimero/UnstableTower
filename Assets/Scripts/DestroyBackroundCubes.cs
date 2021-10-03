@@ -6,14 +6,18 @@ public class DestroyBackroundCubes : MonoBehaviour
 {
     Transform player;
 
-    Vector3 pos;
+    Vector3 initialPos;
+    Vector3 destination;
+    float elapsed = 0;
+    float timer;
 
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        pos = transform.position;
-        StartCoroutine(AnimObject());
+        initialPos = transform.position;
+        destination = initialPos + (Vector3.up * Random.Range(0, 5) * (Random.value >= 0.5f ? 1 : -1));
+        timer = Random.Range(1, 5);
     }
 
     // Update is called once per frame
@@ -22,40 +26,17 @@ public class DestroyBackroundCubes : MonoBehaviour
         if(Vector3.Distance(transform.position, player.position) > 100)
         {
             Destroy(gameObject);
+            return;
         }
-    }
-
-    private IEnumerator AnimObject()
-    {
-
-        float space = Random.Range(0, 5);
-
-        float timer = Random.Range(0, 5);
-
-
-        float elapsed = 0;
-        while(elapsed < 1)
+        else if(transform.position == destination)
         {
-            elapsed += Time.deltaTime / timer;
-
-            transform.localPosition = Vector3.Lerp(pos, pos + (Vector3.up * space), elapsed);
-
-            yield return null;
+               var temp = initialPos;
+               initialPos = destination;
+               destination = temp;
+               elapsed = 0;
         }
 
-        elapsed = 0;
-        timer = Random.Range(0, 5);
-
-        while (elapsed < 1)
-        {
-            elapsed += Time.deltaTime / timer;
-
-            transform.localPosition = Vector3.Lerp(pos + (Vector3.up * space), pos, elapsed);
-
-            yield return null;
-        }
-
-        StartCoroutine(AnimObject());
-
+        elapsed += Time.deltaTime / timer;
+        transform.localPosition = Vector3.Lerp(initialPos, destination, elapsed);
     }
 }

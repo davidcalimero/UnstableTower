@@ -720,9 +720,9 @@ MonoBehaviour:
   target: {fileID: 28360854}
   player: {fileID: 1780424831}
   number_of_objects: 10
-  min_object_distance: 5
+  min_object_distance: 20
   min_target_distsnce: 30
-  max_target_distance: 40
+  max_target_distance: 60
 --- !u!4 &447189256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3556695906956108977, guid: 1775fb7387e7a6e44b5526b9828c1cf0, type: 3}
