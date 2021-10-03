@@ -35,10 +35,10 @@ public class CubeMovement : MonoBehaviour
     void Update()
     {
         CheckDeath();
-        if(!died)
+        if(!died && GameStuff.start)
         {
             Move(false);
-        }  
+        }
     }
 
     void CheckDeath()
