@@ -6,52 +6,78 @@ public class PiecesSpawner : MonoBehaviour
 {
     public GameObject[] prefabs;
     public Transform target;
+    public AnimationClip animation;
 
-    public int number_of_objects = 100;
-    public float min_object_distance = 3.0f;
-    public float min_target_distsnce = 10.0f;
-    public float max_target_distance = 20.0f;
+    public Transform player;
+
+    public int number_of_objects = 10;
+    public float min_object_distance = 5.0f;
+    public float min_target_distsnce = 40.0f;
+    public float max_target_distance = 50.0f;
+
+    private float lastPlayerHeight = 0;
 
     private Vector3[] positions;
 
 
     void Start()
     {
-        SpawnObjects();
+        SpawnObjects(new Vector2(player.position.y - 30, player.position.y + 30));
+        lastPlayerHeight = Mathf.Round(player.position.y);
     }
 
-    void SpawnObjects()
+    void Update()
     {
-        positions = new Vector3[number_of_objects];
+        float newHeight = Mathf.Round(player.position.y);
+        if(lastPlayerHeight < newHeight)
+        {
+            SpawnObjects(new Vector2(lastPlayerHeight + 31, newHeight + 30));
+            lastPlayerHeight = newHeight;
+        }
+    }
 
+    void SpawnObjects(Vector2 range)
+    {
         if(prefabs.Length < 1)
         {
             return;
         }
 
-        for (int count = 0; count < number_of_objects; ++count)
+        for (float height = range.x; height <= range.y; ++height)
         {
-            int index = Random.Range(0, prefabs.Length);
-            GameObject prefab = prefabs[index];
-            Vector3 position = GetRandomPosition();
-            positions[count] = position;
+            positions = new Vector3[number_of_objects];
 
-            Instantiate(prefab, position, Quaternion.Euler(0, 0, 0));
+            for (int count = 0; count < number_of_objects; ++count)
+            {
+                int index = Random.Range(0, prefabs.Length);
+                GameObject prefab = prefabs[index];
+                Vector3 position = GetRandomPosition(height);
+                positions[count] = position;
 
+                GameObject instance = Instantiate(prefab, position, Quaternion.Euler(Random.Range(0, 359), Random.Range(0, 359), Random.Range(0, 359)));
+                instance.AddComponent<DestroyBackroundCubes>();
+                Animation animator = instance.AddComponent<Animation>();
+                animator.clip = animation;
+                animator.playAutomatically = true;
+            }
         }
     }
 
-    Vector3 GetRandomPosition()
+    Vector3 GetRandomPosition(float y)
     {
-        Vector3 result = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f)).normalized;
+        Vector2 randomPoint = Random.insideUnitCircle.normalized;
+        Vector3 result = new Vector3(randomPoint.x, 0, randomPoint.y);
         result *= Random.Range(min_target_distsnce, max_target_distance);
         result += transform.position;
+        result.x += -13;
+        result.z += 13;
+        result.y = y;
 
         foreach (Vector3 vector in positions)
         {
             if(Mathf.Abs(Vector3.Distance(vector, result)) < min_object_distance)
             {
-                return GetRandomPosition();
+                return GetRandomPosition(y);
             }
         }
 

@@ -663,6 +663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 421146747}
   - component: {fileID: 421146748}
+  - component: {fileID: 421146749}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -698,6 +699,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heightUntilStart: 5
   player: {fileID: 2071061045}
+--- !u!114 &421146749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421146746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ea3e9f4c491e647982ca24288bd566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 4306335230660120709, guid: 2eeb0a181f33e7c4eb8052a7efd84af4, type: 3}
+  target: {fileID: 28360854}
+  player: {fileID: 1780424831}
+  number_of_objects: 10
+  min_object_distance: 5
+  min_target_distsnce: 30
+  max_target_distance: 40
 --- !u!4 &447189256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3556695906956108977, guid: 1775fb7387e7a6e44b5526b9828c1cf0, type: 3}
@@ -857,6 +878,10 @@ PrefabInstance:
     - target: {fileID: 984968212840652844, guid: ae3ad26ee99d2d64588a89d921dfeb0a, type: 3}
       propertyPath: m_Name
       value: Pivot
+      objectReference: {fileID: 0}
+    - target: {fileID: 984968212840652844, guid: ae3ad26ee99d2d64588a89d921dfeb0a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae3ad26ee99d2d64588a89d921dfeb0a, type: 3}
