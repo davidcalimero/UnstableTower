@@ -62,6 +62,11 @@ public class CubeMovement : MonoBehaviour
 
     void Move(bool force)
     {
+        if(!allowMoveBack && !allowMoveForward && !allowMoveLeft && !allowMoveRight && !allowMoveUp && !allowMoveDown)
+        {
+            return;
+        }
+
         lastTick += Time.deltaTime;
         if(!force && lastTick < interval)
         {
@@ -126,7 +131,7 @@ public class CubeMovement : MonoBehaviour
     IEnumerator Translate(Vector3 destination)
     {
         float elapsedTime = 0;
-        while(elapsedTime < 1 || transform.position.y != -10)
+        while(elapsedTime < 1 && transform.position.y > -10)
         {
             elapsedTime += Time.deltaTime;
             float x = Mathf.Lerp(transform.position.x, destination.x, elapsedTime);
