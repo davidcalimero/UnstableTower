@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 379036876944139477}
   - component: {fileID: 6359737601436340799}
   - component: {fileID: 2845617605180412884}
+  - component: {fileID: 1676577556529701859}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,6 +96,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &1676577556529701859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3467505024499546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &41759455844861052
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,8 +195,9 @@ GameObject:
   - component: {fileID: 3768285017911453568}
   - component: {fileID: 1280589736605894425}
   - component: {fileID: 5214941614456502952}
+  - component: {fileID: 8025707714922612754}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -250,6 +279,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &8025707714922612754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85975450306573646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &157856658010804962
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,8 +318,9 @@ GameObject:
   - component: {fileID: 9122150248611824482}
   - component: {fileID: 6650095712943600252}
   - component: {fileID: 713430545355795392}
+  - component: {fileID: 9053018615847065560}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,6 +402,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &9053018615847065560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157856658010804962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &262150647529851688
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,8 +441,9 @@ GameObject:
   - component: {fileID: 513659529076905945}
   - component: {fileID: 2716795037641994523}
   - component: {fileID: 5333914324809165079}
+  - component: {fileID: 6756701702847311277}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -441,6 +526,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6756701702847311277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262150647529851688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &287963098789546957
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,8 +565,9 @@ GameObject:
   - component: {fileID: 3611766881461726394}
   - component: {fileID: 1010387170066179373}
   - component: {fileID: 7723535359507942814}
+  - component: {fileID: 6842731298369485128}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -536,6 +649,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6842731298369485128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287963098789546957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &350037224714339888
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,8 +718,9 @@ GameObject:
   - component: {fileID: 6989500661237279878}
   - component: {fileID: 1889844711080591637}
   - component: {fileID: 7021189257742681370}
+  - component: {fileID: 1435856606171746762}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,6 +802,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1435856606171746762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386953225733363495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &396755191822021041
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,8 +841,9 @@ GameObject:
   - component: {fileID: 7401642813927802354}
   - component: {fileID: 7393081506962439590}
   - component: {fileID: 231949127388662720}
+  - component: {fileID: 5483071680326021845}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -756,6 +925,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5483071680326021845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396755191822021041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &460331823758642327
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,8 +994,9 @@ GameObject:
   - component: {fileID: 1242800823097082637}
   - component: {fileID: 6792301037176919258}
   - component: {fileID: 837785389689641101}
+  - component: {fileID: 1115679669662219785}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -881,6 +1078,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &1115679669662219785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514579727596801814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &517043256783025734
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,8 +1117,9 @@ GameObject:
   - component: {fileID: 2832646248902304872}
   - component: {fileID: 6208414108974460531}
   - component: {fileID: 6106980947972336964}
+  - component: {fileID: 6294120073296561243}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -976,6 +1201,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &6294120073296561243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517043256783025734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &553835681077718494
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,8 +1240,9 @@ GameObject:
   - component: {fileID: 115138368943746124}
   - component: {fileID: 4581770931464520037}
   - component: {fileID: 4979390950701483987}
+  - component: {fileID: 5848424589195648558}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1071,6 +1324,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &5848424589195648558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553835681077718494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &594841884699758226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,8 +1363,9 @@ GameObject:
   - component: {fileID: 1208376097779181116}
   - component: {fileID: 6989513103169643006}
   - component: {fileID: 1999016037235521971}
+  - component: {fileID: 6761877794776870412}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1166,6 +1447,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6761877794776870412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594841884699758226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &595579357285000096
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,8 +1546,9 @@ GameObject:
   - component: {fileID: 4079702592083932547}
   - component: {fileID: 6629677297369606920}
   - component: {fileID: 1578021743589238392}
+  - component: {fileID: 26056236501224954}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1321,6 +1630,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &26056236501224954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609745482651852410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &851682827173606017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,63 +1747,6 @@ Transform:
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &1036458875101730735
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3888492354583897266}
-  - component: {fileID: 6762389954341433838}
-  - component: {fileID: 3187811875956627785}
-  m_Layer: 6
-  m_Name: RotationTrigger (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3888492354583897266
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036458875101730735}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4926758356460528837}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6762389954341433838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036458875101730735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!135 &3187811875956627785
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036458875101730735}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1074697914482345738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,8 +1759,9 @@ GameObject:
   - component: {fileID: 7848210350028575163}
   - component: {fileID: 5131067484363053381}
   - component: {fileID: 4313489493090335646}
+  - component: {fileID: 7140731509701988900}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1563,6 +1843,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7140731509701988900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074697914482345738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1206833652059865209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,8 +1882,9 @@ GameObject:
   - component: {fileID: 1670172509023271000}
   - component: {fileID: 3854905760947586981}
   - component: {fileID: 8150554423710455507}
+  - component: {fileID: 4673383555238002525}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1658,6 +1966,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4673383555238002525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206833652059865209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1209227898274470933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,8 +2005,9 @@ GameObject:
   - component: {fileID: 5250405659074763227}
   - component: {fileID: 3142653857997592284}
   - component: {fileID: 2920694289971782640}
+  - component: {fileID: 2841095356197991216}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1753,63 +2089,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
---- !u!1 &1235405885833454300
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1091141318152829571}
-  - component: {fileID: 6305840624533233603}
-  - component: {fileID: 4555307240771058342}
-  m_Layer: 6
-  m_Name: RotationTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1091141318152829571
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235405885833454300}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3219852214056452231}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &6305840624533233603
+--- !u!114 &2841095356197991216
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235405885833454300}
+  m_GameObject: {fileID: 1209227898274470933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &4555307240771058342
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235405885833454300}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1472171370283268641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,8 +2188,9 @@ GameObject:
   - component: {fileID: 1483183775350607558}
   - component: {fileID: 7950872787261441537}
   - component: {fileID: 1566341940454599869}
+  - component: {fileID: 3228133405333221335}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1965,6 +2272,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3228133405333221335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726970082694613364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1785944351656957772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1977,8 +2311,9 @@ GameObject:
   - component: {fileID: 7610923638324088433}
   - component: {fileID: 8464831741281248160}
   - component: {fileID: 3241879728613762631}
+  - component: {fileID: 7307745841418633698}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2060,6 +2395,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &7307745841418633698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785944351656957772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1887004899426726655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,8 +2434,9 @@ GameObject:
   - component: {fileID: 1270397346432849126}
   - component: {fileID: 7050128959362902963}
   - component: {fileID: 7521638133183979081}
+  - component: {fileID: 8400967239310586663}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2155,6 +2518,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8400967239310586663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887004899426726655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1930233174057477338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,8 +2587,9 @@ GameObject:
   - component: {fileID: 2630720533310529301}
   - component: {fileID: 2045133055281650081}
   - component: {fileID: 3160666189488011070}
+  - component: {fileID: 8429143491315892228}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2280,6 +2671,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8429143491315892228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944472912285296766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1982102284805203413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,8 +2710,9 @@ GameObject:
   - component: {fileID: 1658145101396629079}
   - component: {fileID: 8045444797732681325}
   - component: {fileID: 4327150325081257971}
+  - component: {fileID: 6351200700782413124}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2375,6 +2794,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6351200700782413124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982102284805203413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2001692801054184307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,8 +2833,9 @@ GameObject:
   - component: {fileID: 5890489448608495806}
   - component: {fileID: 5936058105027967762}
   - component: {fileID: 8364865503509366255}
+  - component: {fileID: 6216241012437637905}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2470,6 +2917,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &6216241012437637905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001692801054184307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2026532812689372756
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,8 +2956,9 @@ GameObject:
   - component: {fileID: 580027929031756887}
   - component: {fileID: 2270507490057326521}
   - component: {fileID: 4159188015712520418}
+  - component: {fileID: 6997767175979794657}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2565,6 +3040,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &6997767175979794657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026532812689372756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2068273605126080988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,8 +3079,9 @@ GameObject:
   - component: {fileID: 2208373506718144417}
   - component: {fileID: 4217026955962644320}
   - component: {fileID: 5021693993380990876}
+  - component: {fileID: 4811039090467695235}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2660,6 +3163,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4811039090467695235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068273605126080988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2139105569093298578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,8 +3202,9 @@ GameObject:
   - component: {fileID: 2238483143232457670}
   - component: {fileID: 5915278096538028758}
   - component: {fileID: 90641436987515453}
+  - component: {fileID: 6084730576268060718}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2755,6 +3286,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &6084730576268060718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139105569093298578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2223843341775689688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,8 +3325,9 @@ GameObject:
   - component: {fileID: 2957454033964001448}
   - component: {fileID: 6588075476087796189}
   - component: {fileID: 8628546017170381717}
+  - component: {fileID: 575846331846854585}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2850,6 +3409,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &575846331846854585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223843341775689688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2340363558323119477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2862,8 +3448,9 @@ GameObject:
   - component: {fileID: 7781182613121770907}
   - component: {fileID: 2169867566072589657}
   - component: {fileID: 329363214503637613}
+  - component: {fileID: 8452240142178204520}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2945,6 +3532,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &8452240142178204520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2340363558323119477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2354350580342146884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,8 +3602,9 @@ GameObject:
   - component: {fileID: 5624207406292931669}
   - component: {fileID: 6060721460855881106}
   - component: {fileID: 2007113786708564168}
+  - component: {fileID: 7277561709247174841}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3071,6 +3686,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &7277561709247174841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439684377660711419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2504822318515031947
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,8 +3755,9 @@ GameObject:
   - component: {fileID: 1383464366145829348}
   - component: {fileID: 4121196229800979167}
   - component: {fileID: 4981880170998671239}
+  - component: {fileID: 2388394627577465286}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3196,6 +3839,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2388394627577465286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517157712991043849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2553179901960103672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3208,8 +3878,9 @@ GameObject:
   - component: {fileID: 2725185713347459027}
   - component: {fileID: 2932430483529433929}
   - component: {fileID: 6402243599949371269}
+  - component: {fileID: 8081973060149134671}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3291,6 +3962,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8081973060149134671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553179901960103672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2567828553479126037
 GameObject:
   m_ObjectHideFlags: 0
@@ -3303,8 +4001,9 @@ GameObject:
   - component: {fileID: 6590264231769819081}
   - component: {fileID: 2245029283029424520}
   - component: {fileID: 920425539034855544}
+  - component: {fileID: 2174183498032488341}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3386,6 +4085,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &2174183498032488341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2567828553479126037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2590179468260736108
 GameObject:
   m_ObjectHideFlags: 0
@@ -3428,8 +4154,9 @@ GameObject:
   - component: {fileID: 5880042601401059933}
   - component: {fileID: 5576174051571904210}
   - component: {fileID: 898004479385061345}
+  - component: {fileID: 6576973542778031854}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3445,8 +4172,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 14, z: 26}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1091141318152829571}
+  m_Children: []
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 147
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3512,6 +4238,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &6576973542778031854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2639567474623483037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2706324406466735461
 GameObject:
   m_ObjectHideFlags: 0
@@ -3524,8 +4277,9 @@ GameObject:
   - component: {fileID: 2158551144019914826}
   - component: {fileID: 7815086293860268985}
   - component: {fileID: 4209439761331260302}
+  - component: {fileID: 6789630281590921344}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3541,8 +4295,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -26, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 8423791432358889928}
+  m_Children: []
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3608,6 +4361,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6789630281590921344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2706324406466735461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2953177326294018853
 GameObject:
   m_ObjectHideFlags: 0
@@ -3620,8 +4400,9 @@ GameObject:
   - component: {fileID: 3191134935036133887}
   - component: {fileID: 5425567960715590682}
   - component: {fileID: 2170463012321412697}
+  - component: {fileID: 2316317257145756239}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3703,6 +4484,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2316317257145756239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2953177326294018853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2966000419130488163
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,8 +4613,9 @@ GameObject:
   - component: {fileID: 3585707286595587800}
   - component: {fileID: 749117402638893665}
   - component: {fileID: 2436495264302614756}
+  - component: {fileID: 2259169613969399376}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3888,6 +4697,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2259169613969399376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3080440976204801920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3108212102429864059
 GameObject:
   m_ObjectHideFlags: 0
@@ -3900,8 +4736,9 @@ GameObject:
   - component: {fileID: 763437703254579851}
   - component: {fileID: 6841624366392626438}
   - component: {fileID: 1556526093844005190}
+  - component: {fileID: 2498548636969108735}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3983,6 +4820,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &2498548636969108735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3108212102429864059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3133851169573840720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,8 +4859,9 @@ GameObject:
   - component: {fileID: 8424397042154704659}
   - component: {fileID: 5503703374497537686}
   - component: {fileID: 1521866060594796473}
+  - component: {fileID: 4700536618243836058}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4078,6 +4943,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &4700536618243836058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3133851169573840720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3139195207722286799
 GameObject:
   m_ObjectHideFlags: 0
@@ -4090,8 +4982,9 @@ GameObject:
   - component: {fileID: 7468806280180195008}
   - component: {fileID: 3440337725366546947}
   - component: {fileID: 2887328164130045110}
+  - component: {fileID: 2697168583688489506}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4173,6 +5066,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2697168583688489506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3139195207722286799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3164485487172754389
 GameObject:
   m_ObjectHideFlags: 0
@@ -4185,8 +5105,9 @@ GameObject:
   - component: {fileID: 3512555272698408600}
   - component: {fileID: 9054178967788500321}
   - component: {fileID: 2016646305979237672}
+  - component: {fileID: 3657331366830491970}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4269,6 +5190,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &3657331366830491970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3164485487172754389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3175916207323720534
 GameObject:
   m_ObjectHideFlags: 0
@@ -4281,8 +5229,9 @@ GameObject:
   - component: {fileID: 1137548853772078355}
   - component: {fileID: 2798941172872018083}
   - component: {fileID: 1213971710456723339}
+  - component: {fileID: 2419373413285114637}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4364,6 +5313,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2419373413285114637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3175916207323720534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3227952479720784281
 GameObject:
   m_ObjectHideFlags: 0
@@ -4406,8 +5382,9 @@ GameObject:
   - component: {fileID: 7914764000204773190}
   - component: {fileID: 8879582317494653326}
   - component: {fileID: 470784913888513170}
+  - component: {fileID: 6536248940796661657}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4489,6 +5466,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6536248940796661657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3420224107648715338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3483603277332362745
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,8 +5505,9 @@ GameObject:
   - component: {fileID: 85452336650132563}
   - component: {fileID: 5349006254498862326}
   - component: {fileID: 6475835506870842873}
+  - component: {fileID: 718615808258352819}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4584,6 +5589,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &718615808258352819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3483603277332362745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3565010099768162884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4656,8 +5688,9 @@ GameObject:
   - component: {fileID: 1526911779231389356}
   - component: {fileID: 6047073716656243758}
   - component: {fileID: 4266068492404254796}
+  - component: {fileID: 3675735752907909331}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4739,6 +5772,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3675735752907909331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3752832529582082519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3779003578181904691
 GameObject:
   m_ObjectHideFlags: 0
@@ -4751,8 +5811,9 @@ GameObject:
   - component: {fileID: 8239060793839175339}
   - component: {fileID: 3861056965313384031}
   - component: {fileID: 2423282958916920578}
+  - component: {fileID: 5008114400953778650}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4834,6 +5895,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &5008114400953778650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3779003578181904691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3851842071555701282
 GameObject:
   m_ObjectHideFlags: 0
@@ -4846,8 +5934,9 @@ GameObject:
   - component: {fileID: 1150898208089349733}
   - component: {fileID: 5024744207113122667}
   - component: {fileID: 4170954355738454540}
+  - component: {fileID: 6562028027028720182}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4929,6 +6018,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &6562028027028720182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851842071555701282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3874831137930710320
 GameObject:
   m_ObjectHideFlags: 0
@@ -4971,8 +6087,9 @@ GameObject:
   - component: {fileID: 3069760941199681571}
   - component: {fileID: 3170861773294669282}
   - component: {fileID: 8664607433210618841}
+  - component: {fileID: 7448623802186160766}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5054,6 +6171,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &7448623802186160766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3897213355377773524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3905570984317810713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5066,8 +6210,9 @@ GameObject:
   - component: {fileID: 2637666629491453545}
   - component: {fileID: 896485925888298581}
   - component: {fileID: 6098904239483931596}
+  - component: {fileID: 8582838248898996490}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5150,6 +6295,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &8582838248898996490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3905570984317810713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4038787385168788541
 GameObject:
   m_ObjectHideFlags: 0
@@ -5192,8 +6364,9 @@ GameObject:
   - component: {fileID: 3734007835178871877}
   - component: {fileID: 2504143745977643336}
   - component: {fileID: 1156620037738105611}
+  - component: {fileID: 791261616201695853}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5275,6 +6448,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &791261616201695853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4051728450580513804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4057616712559620335
 GameObject:
   m_ObjectHideFlags: 0
@@ -5287,8 +6487,9 @@ GameObject:
   - component: {fileID: 773370966997484540}
   - component: {fileID: 3330100096275394835}
   - component: {fileID: 1051281758178260669}
+  - component: {fileID: 16543212739792679}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5370,6 +6571,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &16543212739792679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4057616712559620335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4135314947407667598
 GameObject:
   m_ObjectHideFlags: 0
@@ -5412,8 +6640,9 @@ GameObject:
   - component: {fileID: 6429697819404279783}
   - component: {fileID: 7056183746776474950}
   - component: {fileID: 1065989134576536673}
+  - component: {fileID: 8634715666727795567}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5495,6 +6724,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &8634715666727795567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199204839036706614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4233079963168856547
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,8 +6763,9 @@ GameObject:
   - component: {fileID: 1170839985222329574}
   - component: {fileID: 2542497341069393019}
   - component: {fileID: 379489922391874376}
+  - component: {fileID: 957522529655581162}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5590,6 +6847,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &957522529655581162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4233079963168856547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4271061179091766998
 GameObject:
   m_ObjectHideFlags: 0
@@ -5632,8 +6916,9 @@ GameObject:
   - component: {fileID: 5688855908536447647}
   - component: {fileID: 4409102275726811993}
   - component: {fileID: 1349209506589631655}
+  - component: {fileID: 5220991690294018586}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5715,6 +7000,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5220991690294018586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4276665921361556444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4300115536626900453
 GameObject:
   m_ObjectHideFlags: 0
@@ -5745,63 +7057,6 @@ Transform:
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!1 &4335542644270970833
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1091118124915206977}
-  - component: {fileID: 4055054210695766071}
-  - component: {fileID: 4719841581802930235}
-  m_Layer: 6
-  m_Name: RotationTrigger (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1091118124915206977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4335542644270970833}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3264101193703655515}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &4055054210695766071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4335542644270970833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!135 &4719841581802930235
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4335542644270970833}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4342459334915184629
 GameObject:
   m_ObjectHideFlags: 0
@@ -5814,8 +7069,9 @@ GameObject:
   - component: {fileID: 8952011184540554163}
   - component: {fileID: 2501055229114815107}
   - component: {fileID: 7847763983730154854}
+  - component: {fileID: 4608865905868434199}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5897,6 +7153,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4608865905868434199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4342459334915184629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4372094158201042983
 GameObject:
   m_ObjectHideFlags: 0
@@ -5909,8 +7192,9 @@ GameObject:
   - component: {fileID: 2928112904545257759}
   - component: {fileID: 2032466710176133950}
   - component: {fileID: 7511016228264030687}
+  - component: {fileID: 8875927287630687861}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5992,6 +7276,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &8875927287630687861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372094158201042983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4495109249102909123
 GameObject:
   m_ObjectHideFlags: 0
@@ -6004,8 +7315,9 @@ GameObject:
   - component: {fileID: 7465831501715001367}
   - component: {fileID: 7268233989058421734}
   - component: {fileID: 6786127965179313364}
+  - component: {fileID: 3073602224999834394}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6087,6 +7399,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &3073602224999834394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4495109249102909123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4574295420423038007
 GameObject:
   m_ObjectHideFlags: 0
@@ -62745,7 +64084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4574295421674661430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Inside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93968,7 +95307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4574295422413310375}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Block2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101740,8 +103079,9 @@ GameObject:
   - component: {fileID: 8943772092806456406}
   - component: {fileID: 8544701117198973792}
   - component: {fileID: 8924569189793914397}
+  - component: {fileID: 820758156011708287}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101823,6 +103163,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &820758156011708287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579908086351640824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4592439090193560900
 GameObject:
   m_ObjectHideFlags: 0
@@ -101835,8 +103202,9 @@ GameObject:
   - component: {fileID: 3694642875060904423}
   - component: {fileID: 4045492569587585622}
   - component: {fileID: 6671428922009751278}
+  - component: {fileID: 1151882025336702196}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101918,6 +103286,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &1151882025336702196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592439090193560900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4598633982411326957
 GameObject:
   m_ObjectHideFlags: 0
@@ -101960,8 +103355,9 @@ GameObject:
   - component: {fileID: 7201852135677510997}
   - component: {fileID: 2002326341329757723}
   - component: {fileID: 2895185442269356911}
+  - component: {fileID: 7959159401319422639}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102043,6 +103439,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7959159401319422639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617094485036497900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4628975721536943229
 GameObject:
   m_ObjectHideFlags: 0
@@ -102085,8 +103508,9 @@ GameObject:
   - component: {fileID: 2589157725780277786}
   - component: {fileID: 4437339957957552047}
   - component: {fileID: 5927864606069945995}
+  - component: {fileID: 8139397315392075388}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102168,6 +103592,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &8139397315392075388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4691969758632047905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4791866313755404379
 GameObject:
   m_ObjectHideFlags: 0
@@ -102180,8 +103631,9 @@ GameObject:
   - component: {fileID: 8275442409498502902}
   - component: {fileID: 3401956531884468980}
   - component: {fileID: 3502601545993291455}
+  - component: {fileID: 6083003171263266139}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102197,8 +103649,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -26, y: 8, z: 26}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1303049081045162164}
+  m_Children: []
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102264,6 +103715,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6083003171263266139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4791866313755404379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4798111522365531233
 GameObject:
   m_ObjectHideFlags: 0
@@ -102303,7 +103781,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7150328305220922494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102493,8 +103971,9 @@ GameObject:
   - component: {fileID: 7168149446957967661}
   - component: {fileID: 5577041265433414544}
   - component: {fileID: 3719700559707917932}
+  - component: {fileID: 1082036621989941671}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102576,6 +104055,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &1082036621989941671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4876319407804057763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4919853699520232721
 GameObject:
   m_ObjectHideFlags: 0
@@ -102588,8 +104094,9 @@ GameObject:
   - component: {fileID: 8163607183741173174}
   - component: {fileID: 3793943812979817245}
   - component: {fileID: 5779289876008598456}
+  - component: {fileID: 20572161464819148}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102671,6 +104178,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &20572161464819148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4919853699520232721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5077436169579727612
 GameObject:
   m_ObjectHideFlags: 0
@@ -102683,8 +104217,9 @@ GameObject:
   - component: {fileID: 168153835822796633}
   - component: {fileID: 198952399171853331}
   - component: {fileID: 1053203094689583279}
+  - component: {fileID: 1804604094013566277}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102766,6 +104301,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &1804604094013566277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5077436169579727612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5083169333028879179
 GameObject:
   m_ObjectHideFlags: 0
@@ -102778,8 +104340,9 @@ GameObject:
   - component: {fileID: 5999256122943084712}
   - component: {fileID: 6925690556071722225}
   - component: {fileID: 3777428166425516442}
+  - component: {fileID: 3246821526453456252}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102861,6 +104424,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3246821526453456252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083169333028879179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5164504834420127735
 GameObject:
   m_ObjectHideFlags: 0
@@ -102873,8 +104463,9 @@ GameObject:
   - component: {fileID: 8625201137661412914}
   - component: {fileID: 8012157344279939805}
   - component: {fileID: 7489947516529021519}
+  - component: {fileID: 8096058404262339853}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102956,63 +104547,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
---- !u!1 &5208498572838583248
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8423791432358889928}
-  - component: {fileID: 4113964532054614712}
-  - component: {fileID: 4111698334879650937}
-  m_Layer: 6
-  m_Name: RotationTrigger (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8423791432358889928
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5208498572838583248}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4475818822438490060}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &4113964532054614712
+--- !u!114 &8096058404262339853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5208498572838583248}
+  m_GameObject: {fileID: 5164504834420127735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &4111698334879650937
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5208498572838583248}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5377668006357452965
 GameObject:
   m_ObjectHideFlags: 0
@@ -103085,8 +104646,9 @@ GameObject:
   - component: {fileID: 4051990501513777605}
   - component: {fileID: 1320722864906650249}
   - component: {fileID: 6764335091335610090}
+  - component: {fileID: 3833738826895342401}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103168,6 +104730,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3833738826895342401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5538765856669496715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5659361695039370607
 GameObject:
   m_ObjectHideFlags: 0
@@ -103237,7 +104826,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5385315952283286793}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103260,63 +104849,6 @@ Transform:
   m_Father: {fileID: 4574295422413310375}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5688526487021648138
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1303049081045162164}
-  - component: {fileID: 256679035074337386}
-  - component: {fileID: 5379845209157820527}
-  m_Layer: 6
-  m_Name: RotationTrigger (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1303049081045162164
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5688526487021648138}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 8141593387122018355}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &256679035074337386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5688526487021648138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!135 &5379845209157820527
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5688526487021648138}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5699188350825126812
 GameObject:
   m_ObjectHideFlags: 0
@@ -103329,8 +104861,9 @@ GameObject:
   - component: {fileID: 6178128901077732240}
   - component: {fileID: 8078233704357109001}
   - component: {fileID: 4987556883065131826}
+  - component: {fileID: 1737347477406337938}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103412,6 +104945,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1737347477406337938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5699188350825126812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5834903738752812083
 GameObject:
   m_ObjectHideFlags: 0
@@ -103424,8 +104984,9 @@ GameObject:
   - component: {fileID: 7893718975539878475}
   - component: {fileID: 2815100941086090969}
   - component: {fileID: 2103220550356951261}
+  - component: {fileID: 6163023132497652538}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103507,6 +105068,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6163023132497652538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834903738752812083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5842472164457646298
 GameObject:
   m_ObjectHideFlags: 0
@@ -103549,8 +105137,9 @@ GameObject:
   - component: {fileID: 6459003178105888255}
   - component: {fileID: 3926828141360235156}
   - component: {fileID: 7335582466521493760}
+  - component: {fileID: 7528064269219481465}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103632,6 +105221,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &7528064269219481465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870483898543406204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5905895267859307359
 GameObject:
   m_ObjectHideFlags: 0
@@ -103704,8 +105320,9 @@ GameObject:
   - component: {fileID: 6727340908190858877}
   - component: {fileID: 2229644853022424757}
   - component: {fileID: 20612208957453395}
+  - component: {fileID: 2979877925634694534}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103721,8 +105338,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2457320379997779601}
+  m_Children: []
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -103788,6 +105404,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &2979877925634694534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5934736128878148763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5936925016027039272
 GameObject:
   m_ObjectHideFlags: 0
@@ -103800,8 +105443,9 @@ GameObject:
   - component: {fileID: 1313801248138888815}
   - component: {fileID: 8223320895310705793}
   - component: {fileID: 5261693761473627688}
+  - component: {fileID: 2229951925886667931}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103817,8 +105461,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 26}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1091118124915206977}
+  m_Children: []
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 134
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -103884,6 +105527,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &2229951925886667931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936925016027039272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5951254209638909321
 GameObject:
   m_ObjectHideFlags: 0
@@ -103956,8 +105626,9 @@ GameObject:
   - component: {fileID: 6521587962493323001}
   - component: {fileID: 4027546076114690149}
   - component: {fileID: 8010020241898445546}
+  - component: {fileID: 2031123544047735511}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104039,63 +105710,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
---- !u!1 &6073247234659965935
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9000170122387298075}
-  - component: {fileID: 446751471059490194}
-  - component: {fileID: 5438602475881482264}
-  m_Layer: 6
-  m_Name: RotationTrigger (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9000170122387298075
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6073247234659965935}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1513135303833625192}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &446751471059490194
+--- !u!114 &2031123544047735511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6073247234659965935}
+  m_GameObject: {fileID: 6038908014466566219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &5438602475881482264
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6073247234659965935}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &6078697304782974981
 GameObject:
   m_ObjectHideFlags: 0
@@ -104108,8 +105749,9 @@ GameObject:
   - component: {fileID: 2727731868296639368}
   - component: {fileID: 2713666966222875592}
   - component: {fileID: 1984285072718000392}
+  - component: {fileID: 2053720885029360203}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104125,8 +105767,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 6, z: 26}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 8550141441106503808}
+  m_Children: []
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 142
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -104192,6 +105833,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &2053720885029360203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078697304782974981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &6157529542794431258
 GameObject:
   m_ObjectHideFlags: 0
@@ -104204,8 +105872,9 @@ GameObject:
   - component: {fileID: 59376673678691678}
   - component: {fileID: 6388199007995979519}
   - component: {fileID: 5028799652461669817}
+  - component: {fileID: 8973517598423024935}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104287,6 +105956,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &8973517598423024935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6157529542794431258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &6355329041906246670
 GameObject:
   m_ObjectHideFlags: 0
@@ -104299,8 +105995,9 @@ GameObject:
   - component: {fileID: 2769863976827478920}
   - component: {fileID: 9163929145825582051}
   - component: {fileID: 5322703278639697790}
+  - component: {fileID: 1889644294399656786}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104382,63 +106079,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &6577894195913573213
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3531798420191722114}
-  - component: {fileID: 9004814226042298556}
-  - component: {fileID: 1239884993063082074}
-  m_Layer: 6
-  m_Name: RotationTrigger (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3531798420191722114
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6577894195913573213}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1323981525639677509}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &9004814226042298556
+--- !u!114 &1889644294399656786
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6577894195913573213}
+  m_GameObject: {fileID: 6355329041906246670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1239884993063082074
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6577894195913573213}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &6616232327828498359
 GameObject:
   m_ObjectHideFlags: 0
@@ -104481,8 +106148,9 @@ GameObject:
   - component: {fileID: 2679713630042422043}
   - component: {fileID: 1748639832812381066}
   - component: {fileID: 7925430472887688193}
+  - component: {fileID: 4338097948878871891}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104564,6 +106232,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4338097948878871891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6713890141519196774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &6766042266497513428
 GameObject:
   m_ObjectHideFlags: 0
@@ -104576,8 +106271,9 @@ GameObject:
   - component: {fileID: 675009470735989025}
   - component: {fileID: 6655503529032368914}
   - component: {fileID: 8691583224399490535}
+  - component: {fileID: 4652794760228044516}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104659,6 +106355,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &4652794760228044516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6766042266497513428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &6860370203790985337
 GameObject:
   m_ObjectHideFlags: 0
@@ -104701,8 +106424,9 @@ GameObject:
   - component: {fileID: 8244430367676511048}
   - component: {fileID: 8736919744236794650}
   - component: {fileID: 4058295340455941421}
+  - component: {fileID: 1405755256991019675}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104718,8 +106442,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -26, y: 4, z: 26}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 9000170122387298075}
+  m_Children: []
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 108
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -104785,6 +106508,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1405755256991019675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6941469260099828169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &6969213068434037903
 GameObject:
   m_ObjectHideFlags: 0
@@ -104797,8 +106547,9 @@ GameObject:
   - component: {fileID: 4097682328060049133}
   - component: {fileID: 5985853181510008639}
   - component: {fileID: 5053969380950525224}
+  - component: {fileID: 2748788168401357122}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104880,6 +106631,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2748788168401357122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969213068434037903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7000941984616017922
 GameObject:
   m_ObjectHideFlags: 0
@@ -104922,8 +106700,9 @@ GameObject:
   - component: {fileID: 450912499243964242}
   - component: {fileID: 6110242437147961224}
   - component: {fileID: 920014665024194683}
+  - component: {fileID: 7405659229368030508}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105005,6 +106784,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &7405659229368030508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7113399750313953341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7134269042173820104
 GameObject:
   m_ObjectHideFlags: 0
@@ -105017,8 +106823,9 @@ GameObject:
   - component: {fileID: 7626774538516233862}
   - component: {fileID: 3352780644424647288}
   - component: {fileID: 3190621770130010712}
+  - component: {fileID: 2003530041761189980}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105100,6 +106907,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &2003530041761189980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7134269042173820104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7141781264039653512
 GameObject:
   m_ObjectHideFlags: 0
@@ -105112,8 +106946,9 @@ GameObject:
   - component: {fileID: 7671157896504777536}
   - component: {fileID: 5862307114579505515}
   - component: {fileID: 693109971743416880}
+  - component: {fileID: 2483310424712328109}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105195,6 +107030,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2483310424712328109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141781264039653512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7221603266288277748
 GameObject:
   m_ObjectHideFlags: 0
@@ -105207,8 +107069,9 @@ GameObject:
   - component: {fileID: 7503246053310966016}
   - component: {fileID: 8832121281157464522}
   - component: {fileID: 6292796355667007666}
+  - component: {fileID: 3597152968846857663}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105290,6 +107153,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &3597152968846857663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7221603266288277748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7293634374420224090
 GameObject:
   m_ObjectHideFlags: 0
@@ -105302,8 +107192,9 @@ GameObject:
   - component: {fileID: 5325186367860472359}
   - component: {fileID: 4720153959519416605}
   - component: {fileID: 8444658362426321610}
+  - component: {fileID: 4836441656831672273}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105385,6 +107276,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4836441656831672273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7293634374420224090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7356256281342536969
 GameObject:
   m_ObjectHideFlags: 0
@@ -105427,8 +107345,9 @@ GameObject:
   - component: {fileID: 2792870747806360207}
   - component: {fileID: 6346538993574971989}
   - component: {fileID: 7884702590471899011}
+  - component: {fileID: 1506631224998719221}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105510,6 +107429,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1506631224998719221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7414357129200074476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7423166384169900489
 GameObject:
   m_ObjectHideFlags: 0
@@ -105540,63 +107486,6 @@ Transform:
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 117
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &7433079537737136502
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2457320379997779601}
-  - component: {fileID: 6566489570087262774}
-  - component: {fileID: 8760013049715832182}
-  m_Layer: 6
-  m_Name: RotationTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2457320379997779601
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7433079537737136502}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7320615463999353487}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6566489570087262774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7433079537737136502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!135 &8760013049715832182
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7433079537737136502}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7560682253889309916
 GameObject:
   m_ObjectHideFlags: 0
@@ -105639,8 +107528,9 @@ GameObject:
   - component: {fileID: 3607548124610673413}
   - component: {fileID: 7137853082532892007}
   - component: {fileID: 3838702151414450554}
+  - component: {fileID: 3859864356030307242}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105656,8 +107546,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 3.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3888492354583897266}
+  m_Children: []
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -105723,6 +107612,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &3859864356030307242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7639069095611317500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7699111040701365784
 GameObject:
   m_ObjectHideFlags: 0
@@ -105735,8 +107651,9 @@ GameObject:
   - component: {fileID: 4701127807168368340}
   - component: {fileID: 8766047994726099177}
   - component: {fileID: 5055559290467819420}
+  - component: {fileID: 5524817189625252583}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105818,6 +107735,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5524817189625252583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7699111040701365784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7710922185780948168
 GameObject:
   m_ObjectHideFlags: 0
@@ -105860,8 +107804,9 @@ GameObject:
   - component: {fileID: 236248096966099718}
   - component: {fileID: 8895768920352913655}
   - component: {fileID: 4356615070170985513}
+  - component: {fileID: 6713692029128289142}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105943,6 +107888,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6713692029128289142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7786402663703327011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7833446013690365836
 GameObject:
   m_ObjectHideFlags: 0
@@ -105955,8 +107927,9 @@ GameObject:
   - component: {fileID: 6655441655971530316}
   - component: {fileID: 7138733036568393991}
   - component: {fileID: 8998749009026966653}
+  - component: {fileID: 4988740571777317103}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106038,6 +108011,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &4988740571777317103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833446013690365836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7856038646581991480
 GameObject:
   m_ObjectHideFlags: 0
@@ -106050,8 +108050,9 @@ GameObject:
   - component: {fileID: 7335495564659539328}
   - component: {fileID: 298088358817252815}
   - component: {fileID: 8099715044733932634}
+  - component: {fileID: 6873188874038203158}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106133,6 +108134,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6873188874038203158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7856038646581991480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7948884009682579373
 GameObject:
   m_ObjectHideFlags: 0
@@ -106145,8 +108173,9 @@ GameObject:
   - component: {fileID: 3821997241189413878}
   - component: {fileID: 7563849164318747548}
   - component: {fileID: 830777262717669505}
+  - component: {fileID: 5994751012872815907}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106228,6 +108257,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5994751012872815907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7948884009682579373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7971716020251783980
 GameObject:
   m_ObjectHideFlags: 0
@@ -106270,8 +108326,9 @@ GameObject:
   - component: {fileID: 1704379922101960680}
   - component: {fileID: 5286936206543143411}
   - component: {fileID: 4848727434721254103}
+  - component: {fileID: 4076858522719972628}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106353,6 +108410,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4076858522719972628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8101850833287783189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8136272127656078147
 GameObject:
   m_ObjectHideFlags: 0
@@ -106395,8 +108479,9 @@ GameObject:
   - component: {fileID: 6411846521360566340}
   - component: {fileID: 6718282398458723756}
   - component: {fileID: 1711248787567459951}
+  - component: {fileID: 7967476693552371}
   m_Layer: 6
-  m_Name: cube (3)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106479,6 +108564,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000038146973, y: 0, z: 0}
+--- !u!114 &7967476693552371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143663527108765118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8155996052366019601
 GameObject:
   m_ObjectHideFlags: 0
@@ -106521,8 +108633,9 @@ GameObject:
   - component: {fileID: 422005744117040968}
   - component: {fileID: 739685669747166454}
   - component: {fileID: 5305646593627848716}
+  - component: {fileID: 2001401967647073320}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106604,6 +108717,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &2001401967647073320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8258733651158116502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8388503231473155021
 GameObject:
   m_ObjectHideFlags: 0
@@ -106616,8 +108756,9 @@ GameObject:
   - component: {fileID: 4708602544130402532}
   - component: {fileID: 8720431491560671406}
   - component: {fileID: 2110361615227431536}
+  - component: {fileID: 3875945761563202969}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106699,6 +108840,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &3875945761563202969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8388503231473155021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8414257206006739490
 GameObject:
   m_ObjectHideFlags: 0
@@ -106771,8 +108939,9 @@ GameObject:
   - component: {fileID: 606447870129349400}
   - component: {fileID: 8696233272040090935}
   - component: {fileID: 5449281492800607277}
+  - component: {fileID: 1789995308953791969}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106854,6 +109023,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &1789995308953791969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448150793984320232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8468210278403475681
 GameObject:
   m_ObjectHideFlags: 0
@@ -106866,8 +109062,9 @@ GameObject:
   - component: {fileID: 1346796619561238740}
   - component: {fileID: 4199610065533032163}
   - component: {fileID: 3686022266524624040}
+  - component: {fileID: 2625261007851623421}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106949,6 +109146,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2625261007851623421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8468210278403475681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8538538030085034515
 GameObject:
   m_ObjectHideFlags: 0
@@ -106961,8 +109185,9 @@ GameObject:
   - component: {fileID: 1995127487082247631}
   - component: {fileID: 5451652177338905059}
   - component: {fileID: 8503216894659540084}
+  - component: {fileID: 8862953503506345801}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107044,6 +109269,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &8862953503506345801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8538538030085034515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8653246331253616792
 GameObject:
   m_ObjectHideFlags: 0
@@ -107056,8 +109308,9 @@ GameObject:
   - component: {fileID: 1958396098094328621}
   - component: {fileID: 6238989447595666579}
   - component: {fileID: 2482875678344527910}
+  - component: {fileID: 1314582998778072654}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107139,6 +109392,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1314582998778072654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8653246331253616792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8785968138282587264
 GameObject:
   m_ObjectHideFlags: 0
@@ -107151,8 +109431,9 @@ GameObject:
   - component: {fileID: 4986273583370182293}
   - component: {fileID: 3913840587076724006}
   - component: {fileID: 6862439311962026102}
+  - component: {fileID: 7016430448094581716}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107168,8 +109449,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -26, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3531798420191722114}
+  m_Children: []
   m_Father: {fileID: 7150328305220922494}
   m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -107235,6 +109515,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7016430448094581716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8785968138282587264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8821717698814791639
 GameObject:
   m_ObjectHideFlags: 0
@@ -107247,8 +109554,9 @@ GameObject:
   - component: {fileID: 1328876043013105494}
   - component: {fileID: 3967731603767731872}
   - component: {fileID: 4336090202461150164}
+  - component: {fileID: 600326925885562979}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107330,6 +109638,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &600326925885562979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821717698814791639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8823098034437431861
 GameObject:
   m_ObjectHideFlags: 0
@@ -107342,8 +109677,9 @@ GameObject:
   - component: {fileID: 8722855618401230182}
   - component: {fileID: 4995286509489593477}
   - component: {fileID: 3062711483659169669}
+  - component: {fileID: 4406731367104708039}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107425,63 +109761,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &8841506676775472782
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8550141441106503808}
-  - component: {fileID: 8077035999411000256}
-  - component: {fileID: 4166608961396932756}
-  m_Layer: 6
-  m_Name: RotationTrigger (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8550141441106503808
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8841506676775472782}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4624965360179498625}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &8077035999411000256
+--- !u!114 &4406731367104708039
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8841506676775472782}
+  m_GameObject: {fileID: 8823098034437431861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &4166608961396932756
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8841506676775472782}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8859380841158946686
 GameObject:
   m_ObjectHideFlags: 0
@@ -107524,8 +109830,9 @@ GameObject:
   - component: {fileID: 3156074530618217089}
   - component: {fileID: 7087529074538585269}
   - component: {fileID: 1813529396761609950}
+  - component: {fileID: 3120416046141742522}
   m_Layer: 6
-  m_Name: cube (1)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107607,6 +109914,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
+--- !u!114 &3120416046141742522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860195544353903459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8905626954955556589
 GameObject:
   m_ObjectHideFlags: 0
@@ -107619,8 +109953,9 @@ GameObject:
   - component: {fileID: 6494490972727740134}
   - component: {fileID: 7365177356204819108}
   - component: {fileID: 3074969629555823379}
+  - component: {fileID: 4436918483072853593}
   m_Layer: 6
-  m_Name: cube (2)
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107702,6 +110037,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0.0000019073486, y: 0, z: 0}
+--- !u!114 &4436918483072853593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8905626954955556589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8959431640659113320
 GameObject:
   m_ObjectHideFlags: 0
@@ -107714,8 +110076,9 @@ GameObject:
   - component: {fileID: 6839979351430252730}
   - component: {fileID: 6761926187344683912}
   - component: {fileID: 3972691213392453594}
+  - component: {fileID: 5405733267337637221}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107797,6 +110160,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5405733267337637221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8959431640659113320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &9000804294760462200
 GameObject:
   m_ObjectHideFlags: 0
@@ -107839,8 +110229,9 @@ GameObject:
   - component: {fileID: 525379331431713028}
   - component: {fileID: 3475030023858555116}
   - component: {fileID: 8672902758303381757}
+  - component: {fileID: 1072205878623548790}
   m_Layer: 6
-  m_Name: cube
+  m_Name: blueCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107922,6 +110313,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1072205878623548790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9181288560807495292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8540709105720eb4fb6db64ff507d05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveInterval: {x: 5, y: 10}
+  movement: 2
+  allowMoveUp: 1
+  allowMoveDown: 1
+  allowMoveRight: 0
+  allowMoveLeft: 0
+  allowMoveForward: 0
+  allowMoveBack: 0
+  collidingUp: 0
+  collidingDown: 0
+  collidingLeft: 0
+  collidingRight: 0
+  collidingForward: 0
+  collidingBack: 0
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &9193845879539776918
 GameObject:
   m_ObjectHideFlags: 0
@@ -108007,6 +110425,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 2268553048103816200, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268553048509759836, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
 --- !u!4 &1586447037629488020 stripped
@@ -108068,6 +110494,14 @@ PrefabInstance:
     - target: {fileID: 2268553048103816200, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
       propertyPath: m_Name
       value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268553048103816200, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268553048509759836, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
@@ -108131,6 +110565,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 2268553048103816200, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268553048509759836, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
 --- !u!4 &2396494755681974348 stripped
@@ -108192,6 +110634,14 @@ PrefabInstance:
     - target: {fileID: 2268553048103816200, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
       propertyPath: m_Name
       value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268553048103816200, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268553048509759836, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2afb9b23fe4b66a448ff54bb557075e1, type: 3}

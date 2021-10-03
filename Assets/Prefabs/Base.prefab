@@ -11483,8 +11483,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4926776703055464852}
-  - component: {fileID: 2225864998763104283}
   - component: {fileID: 7406780230015195140}
+  - component: {fileID: 3904584078795699721}
   m_Layer: 6
   m_Name: RotationTrigger (1)
   m_TagString: Untagged
@@ -11506,19 +11506,6 @@ Transform:
   m_Father: {fileID: 8813984771121898583}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &2225864998763104283
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3902420511505314712}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7406780230015195140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11531,6 +11518,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &3904584078795699721
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3902420511505314712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 10000000
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3903361956420358493
 GameObject:
   m_ObjectHideFlags: 0
@@ -12493,8 +12494,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7389873258319809591}
-  - component: {fileID: 387456314242379365}
   - component: {fileID: 2209850664693661358}
+  - component: {fileID: 2575338659668330895}
   m_Layer: 6
   m_Name: RotationTrigger (3)
   m_TagString: Untagged
@@ -12516,19 +12517,6 @@ Transform:
   m_Father: {fileID: 4819572261849953799}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &387456314242379365
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4287412018887999630}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2209850664693661358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12541,6 +12529,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &2575338659668330895
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4287412018887999630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 10000000
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4300676331374704092
 GameObject:
   m_ObjectHideFlags: 0
@@ -15522,8 +15524,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4365114711033634088}
-  - component: {fileID: 4344557727644174869}
   - component: {fileID: 8663751508465651941}
+  - component: {fileID: 9035152464461280971}
   m_Layer: 6
   m_Name: RotationTrigger
   m_TagString: Untagged
@@ -15545,19 +15547,6 @@ Transform:
   m_Father: {fileID: 8813984771352376435}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &4344557727644174869
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5019442130962298128}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8663751508465651941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15570,6 +15559,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &9035152464461280971
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5019442130962298128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 10000000
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5046509660743432861
 GameObject:
   m_ObjectHideFlags: 0
@@ -25417,8 +25420,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8763865691576090829}
-  - component: {fileID: 1328580834247536032}
   - component: {fileID: 5559175964809739863}
+  - component: {fileID: 707017460219582636}
   m_Layer: 6
   m_Name: RotationTrigger (2)
   m_TagString: Untagged
@@ -25440,19 +25443,6 @@ Transform:
   m_Father: {fileID: 2983063070420112227}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1328580834247536032
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8086183542322682807}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5559175964809739863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25465,6 +25455,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5063eba89e4244aa67ea7bae2b6354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &707017460219582636
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8086183542322682807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 10000000
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8149897806003924681
 GameObject:
   m_ObjectHideFlags: 0
