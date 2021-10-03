@@ -5,8 +5,8 @@ using UnityEngine;
 public class GameStuff : MonoBehaviour
 {
     public static float initialtime;
-    public static float timeUntilStart = 15.0f;
-    public static bool start;
+    public static float timeUntilStart = 10.0f;
+    public static bool start = false;
 
 
     private float timePassed = 0;
@@ -22,6 +22,7 @@ public class GameStuff : MonoBehaviour
         timePassed += Time.deltaTime;
         if(timePassed > timeUntilStart)
         {
+            
             start = true;
         }
     }
