@@ -23,18 +23,18 @@ public class CubeMovement : MonoBehaviour
     {
         originalPosition = transform.position;
         interval = Random.Range(moveInterval.x, moveInterval.y);
-        Move();
+        Move(true);
     }
 
     void Update()
     {
-        Move();
+        Move(false);
     }
 
-    void Move()
+    void Move(bool force)
     {
         lastTick += Time.deltaTime;
-        if(lastTick < interval)
+        if(!force && lastTick < interval)
         {
             return;
         }
