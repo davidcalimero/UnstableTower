@@ -58,7 +58,7 @@ public class RotationTrigger : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (target != null)
         {

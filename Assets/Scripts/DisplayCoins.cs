@@ -25,4 +25,9 @@ public class DisplayCoins : MonoBehaviour
 
         }
     }
+
+    public void ChangeColor()
+    {
+        GetComponent<Text>().color = Color.green;
+    }
 }
