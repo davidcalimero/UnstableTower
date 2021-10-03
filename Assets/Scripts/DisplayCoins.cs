@@ -22,6 +22,7 @@ public class DisplayCoins : MonoBehaviour
         else
         {
             GetComponent<Text>().text = "Collected " + coinsNumber +" coins";
+            FindObjectOfType<DisplayMessage>().UpdateSecondImage(coinsNumber);
 
         }
     }

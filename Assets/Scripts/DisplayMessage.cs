@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class DisplayMessage : MonoBehaviour
 {
+    public Text uiSecondMessage;
+
     public IEnumerator Start()
     {
         GetComponent<Text>().text = "";
@@ -30,4 +32,14 @@ public class DisplayMessage : MonoBehaviour
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(0);
     }
+
+    public void UpdateSecondImage(int coins)
+    {
+        uiSecondMessage.GetComponent<Text>().text = (5 - (coins % 5)) + " coins to unlock one more extra jump!";
+        if (coins % 5 == 0 && coins > 0)
+        {
+            FindObjectOfType<PlayerMovement>().maxJumps = Mathf.FloorToInt(coins / 5);
+        }
+    }
+
 }

@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     public float horizontalMove;
     private bool jump = false;
 	private bool doubleJump = false;
+	private int doubleJumpCount = 0;
+	public int maxJumps = 1;
     public float runSpeed = 40;
 
 	[Header("Events")]
@@ -52,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
+				doubleJumpCount = 0;
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
 			}
@@ -80,9 +83,10 @@ public class PlayerMovement : MonoBehaviour
 
 		if (!m_Grounded && doubleJump)
 		{
+			doubleJump = false;
 			// Add a vertical force to the player.
 			m_Grounded = false;
-			m_Rigidbody.AddForce(new Vector3(0f, m_JumpForce, 0f));
+			m_Rigidbody.AddForce(new Vector3(0f, m_JumpForce/2.0f, 0f));
 		}
 	}
 
@@ -95,8 +99,9 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
         }
 
-		if (Input.GetButtonDown("Jump") && !m_Grounded && !doubleJump)
+		if (Input.GetButtonDown("Jump") && !m_Grounded && !doubleJump && doubleJumpCount < maxJumps)
 		{
+			doubleJumpCount++;
 			doubleJump = true;
 		}
 	}
