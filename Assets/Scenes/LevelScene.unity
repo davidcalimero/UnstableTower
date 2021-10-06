@@ -827,6 +827,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heightUntilStart: 5
   player: {fileID: 2071061045}
+  leftJoyStick: {fileID: 2031502049}
+  jumpButton: {fileID: 1511019564}
 --- !u!114 &421146749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1354,6 +1356,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 118201913068517879, guid: 5aabbb8ace950d84babd60199b1600e7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -36.81006
+      objectReference: {fileID: 0}
     - target: {fileID: 2170091644452963119, guid: 5aabbb8ace950d84babd60199b1600e7, type: 3}
       propertyPath: m_Text
       value: 
