@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	public bool m_Grounded;            // Whether or not the player is grounded.
-	private Rigidbody m_Rigidbody;
+	public Rigidbody m_Rigidbody;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40;
 
 	public SoundManager jumpSound;
+	public PlayerInput playerInput;
 
 	[Header("Events")]
 	[Space]
@@ -34,8 +36,6 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Awake()
 	{
-		m_Rigidbody = GetComponent<Rigidbody>();
-
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
 	}
@@ -90,8 +90,6 @@ public class PlayerMovement : MonoBehaviour
 			jumpSound.PlaySound();
 
 			doubleJump = false;
-			// Add a vertical force to the player.
-			m_Grounded = false;
 			m_Rigidbody.velocity = Vector3.zero;
 			m_Rigidbody.AddForce(new Vector3(0f, m_JumpForce/1.25f, 0f));
 		}
@@ -99,17 +97,17 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        horizontalMove = playerInput.actions["Move"].ReadValue<Vector2>().x * runSpeed;
 
-        if(Input.GetButtonDown("Jump"))
+        if(playerInput.actions["Jump"].triggered)
         {
             jump = true;
-        }
 
-		if (Input.GetButtonDown("Jump") && !m_Grounded && !doubleJump && doubleJumpCount < maxJumps)
-		{
-			doubleJumpCount++;
-			doubleJump = true;
-		}
+			if(!m_Grounded && !doubleJump && doubleJumpCount < maxJumps)
+			{
+				doubleJumpCount++;
+				doubleJump = true;
+			}
+        }
 	}
 }

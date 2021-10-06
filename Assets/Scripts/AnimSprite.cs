@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AnimSprite : MonoBehaviour
 {
@@ -11,6 +10,7 @@ public class AnimSprite : MonoBehaviour
     private Vector3 previousPosition;
     public ParticleSystem particles;
     public GameObject ground;
+    public PlayerInput playerInput;
 
     public SoundManager jump;
     public SoundManager run;
@@ -18,8 +18,9 @@ public class AnimSprite : MonoBehaviour
     private void Update()
     {
         Vector3 direction = (transform.position - previousPosition).normalized;
+        float move = playerInput.actions["Move"].ReadValue<Vector2>().x;
 
-        if ((Input.GetAxisRaw("Horizontal") < 0) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
+        if ((move < 0) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
             if (isFalling)
             {
@@ -38,7 +39,7 @@ public class AnimSprite : MonoBehaviour
             }
         }
         else
-        if ((Input.GetAxisRaw("Horizontal") > 0) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
+        if ((move > 0) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
             if (isFalling)
             {
@@ -59,13 +60,13 @@ public class AnimSprite : MonoBehaviour
         }
         else
 
-        if ((Input.GetAxisRaw("Horizontal") < 0) && (isJumping || isFalling))
+        if ((move < 0) && (isJumping || isFalling))
         {
             GetComponent<SpriteRenderer>().flipX = true;
             ground.transform.localEulerAngles = new Vector3(0, 180, 0);
         }
         else
-        if ((Input.GetAxisRaw("Horizontal") > 0) && (isJumping || isFalling))
+        if ((move> 0) && (isJumping || isFalling))
         {
             GetComponent<SpriteRenderer>().flipX = false;
             ground.transform.localEulerAngles = new Vector3(0, 0, 0);
@@ -80,7 +81,7 @@ public class AnimSprite : MonoBehaviour
 
         }
         else
-        if (Input.GetAxisRaw("Horizontal") == 0)
+        if (move == 0)
         {
             isRunning = false;
             GetComponent<Animator>().SetBool("Running", false);
