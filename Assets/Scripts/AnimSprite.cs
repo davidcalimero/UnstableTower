@@ -10,7 +10,7 @@ public class AnimSprite : MonoBehaviour
     private Vector3 previousPosition;
     public ParticleSystem particles;
     public GameObject ground;
-    public PlayerInput playerInput;
+    public PlayerMovement player;
 
     public SoundManager jump;
     public SoundManager run;
@@ -18,7 +18,7 @@ public class AnimSprite : MonoBehaviour
     private void Update()
     {
         Vector3 direction = (transform.position - previousPosition).normalized;
-        float move = playerInput.actions["Move"].ReadValue<Vector2>().x;
+        float move = player.horizontalMove;
 
         if ((move < 0) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
         {
