@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DestroyBackroundCubes : MonoBehaviour
@@ -20,10 +18,9 @@ public class DestroyBackroundCubes : MonoBehaviour
         timer = Random.Range(1, 5);
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(Vector3.Distance(transform.position, player.position) > 100)
+        if((player.position.y - transform.position.y) > 100)
         {
             Destroy(gameObject);
             return;
