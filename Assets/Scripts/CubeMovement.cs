@@ -46,7 +46,7 @@ public class CubeMovement : MonoBehaviour
 
     void CheckDeath()
     {
-        if(transform.position.y <= -10)
+        if(transform.position.y <= -9.99)
         {
             Destroy(gameObject);
             return;
@@ -81,32 +81,32 @@ public class CubeMovement : MonoBehaviour
         List<Vector3> possibleMoves = new List<Vector3>();
         if(originalPosition == transform.position)
         {
-            if(!CheckColision(transform.up) && allowMoveUp)
+            if(allowMoveUp && !CheckColision(transform.up))
             {
                 possibleMoves.Add(transform.up);
                 ++count;
             }
-            if(!CheckColision(-transform.up) && allowMoveDown)
+            if(allowMoveDown && !CheckColision(-transform.up))
             {
                 possibleMoves.Add(-transform.up);
                 ++count;
             }
-            if(!CheckColision(-transform.right) && allowMoveLeft)
+            if(allowMoveLeft && !CheckColision(-transform.right))
             {
                 possibleMoves.Add(-transform.right);
                 ++count;
             }
-            if(!CheckColision(transform.right) && allowMoveRight)
+            if(allowMoveRight && !CheckColision(transform.right))
             {
                 possibleMoves.Add(transform.right);
                 ++count;
             }
-            if(!CheckColision(transform.forward) && allowMoveForward)
+            if(allowMoveForward && !CheckColision(transform.forward))
             {
                 possibleMoves.Add(transform.forward);
                 ++count;
             }
-            if(!CheckColision(-transform.forward) && allowMoveBack)
+            if(allowMoveBack && !CheckColision(-transform.forward))
             {
                 possibleMoves.Add(-transform.forward);
                 ++count;

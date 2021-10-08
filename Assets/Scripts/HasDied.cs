@@ -6,7 +6,7 @@ public class HasDied : MonoBehaviour
 {
     public Rigidbody rigidBody;
 
-    private bool hasDied;
+    public bool hasDied;
     public ParticleSystem blood;
 
     private void OnTriggerEnter(Collider other)
@@ -31,8 +31,6 @@ public class HasDied : MonoBehaviour
             GetComponent<SoundManager>().PlaySound();
             hasDied = true;
             blood.Play();
-            rigidBody.isKinematic = true;
-            rigidBody.useGravity = false;
 
             FindObjectOfType<DisplayMessage>().HasDied();
         }
