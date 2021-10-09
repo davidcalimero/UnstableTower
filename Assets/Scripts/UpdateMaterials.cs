@@ -26,6 +26,8 @@ public class UpdateMaterials : MonoBehaviour
 
     public void Update()
     {
+        if (MobileCheck.IsMobilePlatform()) return;
+
         if(Time.time - timeChanged > .3f)
         {
             timeChanged = Time.time;
