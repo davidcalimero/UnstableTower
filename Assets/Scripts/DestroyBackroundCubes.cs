@@ -20,7 +20,7 @@ public class DestroyBackroundCubes : MonoBehaviour
 
     void FixedUpdate()
     {
-        if((player.position.y - transform.position.y) > 100)
+        if((player.position.y - transform.position.y) > 35)
         {
             Destroy(gameObject);
             return;

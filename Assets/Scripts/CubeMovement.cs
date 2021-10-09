@@ -17,12 +17,14 @@ public class CubeMovement : MonoBehaviour
     public Vector3 originalPosition;
     private float lastTick = 0;
     private float interval = 0;
-    private MeshRenderer renderer;
+    private MeshRenderer meshRenderer;
 
     private Vector2 lifeTime = new Vector2(0.0f, 1.0f);
     private float height;
     private float currentLifeTime;
     public bool died = false;
+
+    private float timeChanged;
 
     void Start()
     {
@@ -32,7 +34,8 @@ public class CubeMovement : MonoBehaviour
         height = transform.position.y;
         currentLifeTime = Random.Range(lifeTime.x, lifeTime.y) + (0.5f * transform.position.y);
 
-        renderer = GetComponent<MeshRenderer>();
+        meshRenderer = GetComponent<MeshRenderer>();
+        timeChanged = Time.time;
     }
 
     void Update()
@@ -45,6 +48,24 @@ public class CubeMovement : MonoBehaviour
         if(!died)
         {
             Move(false);
+            UpdateVisual();
+        }
+    }
+
+    void UpdateVisual()
+    {
+        if(!meshRenderer.isVisible)
+        {
+            return;
+        }
+
+        if(Time.time - timeChanged > .3f)
+        {
+            timeChanged = Time.time;
+            float value1 = (Random.value > 0.5 ? 1 : -1) * transform.localScale.x;
+            float value2 = (Random.value > 0.5 ? 1 : -1) * transform.localScale.y;
+            float value3 = (Random.value > 0.5 ? 1 : -1) * transform.localScale.z;
+            transform.localScale = new Vector3(value1, value2, value3);
         }
     }
 
@@ -80,7 +101,7 @@ public class CubeMovement : MonoBehaviour
         lastTick = 0;
         interval = Random.Range(moveInterval.x, moveInterval.y);
 
-        if(!renderer.isVisible)
+        if(!meshRenderer.isVisible)
         {
             return;
         }
