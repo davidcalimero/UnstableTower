@@ -5,6 +5,7 @@ public class TowerCreator : MonoBehaviour
     public GameObject[] prefabs;
     public Transform player;
     public Transform lastBlock;
+    private UpdateMaterials updateMaterials;
 
 
     private float[] angles = {0,0f, 90.0f, 180.0f, 270.0f};
@@ -14,6 +15,7 @@ public class TowerCreator : MonoBehaviour
 
     void Start()
     {
+        updateMaterials = FindObjectOfType<UpdateMaterials>();
         SpawnBlock();
     }
 
@@ -39,6 +41,6 @@ public class TowerCreator : MonoBehaviour
         Instantiate(prefabs[blockIndex], new Vector3(-13, nextStep, 13), Quaternion.Euler(0.0f, angles[angleIndex], 0.0f));
         nextStep += step;
 
-        FindObjectOfType<UpdateMaterials>().UpdateListCubes();
+        updateMaterials.UpdateListCubes();
     }
 }

@@ -4,22 +4,23 @@ public class SoundManager : MonoBehaviour
 {
     public AudioClip audioclip;
     public bool isLoop;
+    private AudioSource audioSource;
 
     private void Start()
     {
-        AudioSource audio = gameObject.AddComponent<AudioSource>();
-        audio.clip = audioclip;
-        audio.playOnAwake = false;
-        audio.loop = isLoop;
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = audioclip;
+        audioSource.playOnAwake = false;
+        audioSource.loop = isLoop;
     }
 
     public void PlaySound()
     {
-        GetComponent<AudioSource>().Play();
+        audioSource.Play();
     }
 
     public void StopSound()
     {
-        GetComponent<AudioSource>().Stop();
+        audioSource.Stop();
     }
 }

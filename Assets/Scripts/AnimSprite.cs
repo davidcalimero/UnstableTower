@@ -14,45 +14,54 @@ public class AnimSprite : MonoBehaviour
     public SoundManager jump;
     public SoundManager run;
 
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     private void Update()
     {
         Vector3 direction = (transform.position - previousPosition).normalized;
         float move = player.horizontalMove;
 
-        if ((move < 0) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
+        if ((move < 0) && !isJumping && !isFalling && player.m_Grounded)
         {
             if (isFalling)
             {
                 isFalling = false;
-                GetComponent<Animator>().SetBool("Falling", false);
+                animator.SetBool("Falling", false);
             }
 
-            GetComponent<SpriteRenderer>().flipX = true;
+            spriteRenderer.flipX = true;
             ground.transform.localEulerAngles = new Vector3(0, 180, 0);
             if (!isRunning)
             {
                 isRunning = true;
-                GetComponent<Animator>().SetBool("Running", true);
+                animator.SetBool("Running", true);
                 particles.Play();
                 run.PlaySound();
             }
         }
         else
-        if ((move > 0) && !isJumping && !isFalling && transform.parent.GetComponent<PlayerMovement>().m_Grounded)
+        if ((move > 0) && !isJumping && !isFalling && player.m_Grounded)
         {
             if (isFalling)
             {
                 isFalling = false;
-                GetComponent<Animator>().SetBool("Falling", false);
+                animator.SetBool("Falling", false);
             }
 
-            GetComponent<SpriteRenderer>().flipX = false;
+            spriteRenderer.flipX = false;
             ground.transform.localEulerAngles = new Vector3(0, 0, 0);
 
             if (!isRunning)
             {
                 isRunning = true;
-                GetComponent<Animator>().SetBool("Running", true);
+                animator.SetBool("Running", true);
                 particles.Play();
                 run.PlaySound();
             }
@@ -61,20 +70,20 @@ public class AnimSprite : MonoBehaviour
 
         if ((move < 0) && (isJumping || isFalling))
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            spriteRenderer.flipX = true;
             ground.transform.localEulerAngles = new Vector3(0, 180, 0);
         }
         else
         if ((move> 0) && (isJumping || isFalling))
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            spriteRenderer.flipX = false;
             ground.transform.localEulerAngles = new Vector3(0, 0, 0);
         }
-        else if(direction.y > 0 && !transform.parent.GetComponent<PlayerMovement>().m_Grounded)
+        else if(direction.y > 0 && !player.m_Grounded)
         {
             isRunning = false;
             isJumping = true;
-            GetComponent<Animator>().SetBool("Jumping", true);
+            animator.SetBool("Jumping", true);
             particles.Stop();
             run.StopSound();
 
@@ -83,30 +92,28 @@ public class AnimSprite : MonoBehaviour
         if (move == 0)
         {
             isRunning = false;
-            GetComponent<Animator>().SetBool("Running", false);
+            animator.SetBool("Running", false);
             particles.Stop();
             run.StopSound();
 
         }       
 
         else
-        if (!isFalling && direction.y < 0 && !transform.parent.GetComponent<PlayerMovement>().m_Grounded)
+        if (!isFalling && direction.y < 0 && !player.m_Grounded)
         {
             isJumping = false;
             isFalling = true;
-            GetComponent<Animator>().SetBool("Jumping", false);
-            GetComponent<Animator>().SetBool("Falling", true);
+            animator.SetBool("Jumping", false);
+            animator.SetBool("Falling", true);
             run.StopSound();
         }
-        if (transform.parent.GetComponent<PlayerMovement>().m_Grounded || transform.position == previousPosition)
+        if (player.m_Grounded || transform.position == previousPosition)
         {
             isJumping = false;
             isFalling = false;
-            GetComponent<Animator>().SetBool("Jumping", false);
-            GetComponent<Animator>().SetBool("Falling", false);
+            animator.SetBool("Jumping", false);
+            animator.SetBool("Falling", false);
         }
-
-
 
         previousPosition = transform.position;
     }

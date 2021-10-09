@@ -10,15 +10,18 @@ public class DisplayMessage : MonoBehaviour
 
     private int coinToExtraJump = 8;
 
+    Text textComponent;
+
     public IEnumerator Start()
     {
-        GetComponent<Text>().text = "";
+        textComponent = GetComponent<Text>();
+        textComponent.text = "";
         yield return new WaitForSeconds(1);
-        GetComponent<Text>().text = "Unstable Tower!";
+        textComponent.text = "Unstable Tower!";
         yield return new WaitForSeconds(4);
-        GetComponent<Text>().text = "Good luck!";
+        textComponent.text = "Good luck!";
         yield return new WaitForSeconds(3);
-        GetComponent<Text>().text = "";
+        textComponent.text = "";
 
         extraJumpCounts.text = "2 Jumps";
     }
@@ -26,7 +29,7 @@ public class DisplayMessage : MonoBehaviour
     public void HasDied()
     {
         StopAllCoroutines();
-        GetComponent<Text>().text = "Rest in pieces!";
+        textComponent.text = "Rest in pieces!";
         FindObjectOfType<DisplayCoins>().ChangeColor();
         StartCoroutine(DelayRestart());
     }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class RotationTrigger : MonoBehaviour
 {
 
-    private GameObject target;
+    private PlayerMovement target;
     private float currentAngle;
 
     //void OnTriggerEnter(Collider other)
@@ -43,7 +43,7 @@ public class RotationTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            target = other.gameObject;
+            target = other.gameObject.GetComponent<PlayerMovement>();
             currentAngle = -Vector3.SignedAngle(transform.right, Vector3.right, Vector3.up);
         }
     }
@@ -60,8 +60,7 @@ public class RotationTrigger : MonoBehaviour
     {
         if (target != null)
         {
-            PlayerMovement player = target.GetComponent<PlayerMovement>();
-            float targetAngle = (player.horizontalMove > 0 ? -90.0f : 90.0f);
+            float targetAngle = (target.horizontalMove > 0 ? -90.0f : 90.0f);
 
             Vector3 playerPos = target.transform.position;
             playerPos.y = 0;
@@ -72,10 +71,10 @@ public class RotationTrigger : MonoBehaviour
             float distance = Vector3.Distance(corner, playerPos);
 
             float angle = (Mathf.Clamp(Vector3.SignedAngle(transform.right.normalized, (playerPos - corner).normalized, Vector3.up), 0, 90));
-            player.transform.eulerAngles = new Vector3(0, currentAngle + angle, 0);
+            target.transform.eulerAngles = new Vector3(0, currentAngle + angle, 0);
 
             Vector3 newPos = corner + (playerPos - corner).normalized;
-            player.transform.position = new Vector3(newPos.x, player.transform.position.y, newPos.z);
+            target.transform.position = new Vector3(newPos.x, target.transform.position.y, newPos.z);
         }
     }
 }
