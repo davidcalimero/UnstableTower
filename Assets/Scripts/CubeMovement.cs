@@ -17,6 +17,7 @@ public class CubeMovement : MonoBehaviour
     public Vector3 originalPosition;
     private float lastTick = 0;
     private float interval = 0;
+    private MeshRenderer renderer;
 
     private Vector2 lifeTime = new Vector2(0.0f, 1.0f);
     private float height;
@@ -30,6 +31,8 @@ public class CubeMovement : MonoBehaviour
         
         height = transform.position.y;
         currentLifeTime = Random.Range(lifeTime.x, lifeTime.y) + (0.5f * transform.position.y);
+
+        renderer = GetComponent<MeshRenderer>();
     }
 
     void Update()
@@ -38,6 +41,7 @@ public class CubeMovement : MonoBehaviour
         {
             CheckDeath();
         }
+        
         if(!died)
         {
             Move(false);
@@ -66,7 +70,7 @@ public class CubeMovement : MonoBehaviour
         {
             return;
         }
-
+        
         lastTick += Time.deltaTime;
         if(!force && lastTick < interval)
         {
@@ -75,6 +79,11 @@ public class CubeMovement : MonoBehaviour
 
         lastTick = 0;
         interval = Random.Range(moveInterval.x, moveInterval.y);
+
+        if(!renderer.isVisible)
+        {
+            return;
+        }
 
         int count = 0;
 
