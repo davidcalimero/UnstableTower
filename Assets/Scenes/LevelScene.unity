@@ -736,7 +736,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1110054038, guid: 5aabbb8ace950d84babd60199b1600e7, type: 3}
       propertyPath: m_Color.a
-      value: 0.25490198
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1875394068, guid: 5aabbb8ace950d84babd60199b1600e7, type: 3}
       propertyPath: m_ControlPath
@@ -744,7 +744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1875394070, guid: 5aabbb8ace950d84babd60199b1600e7, type: 3}
       propertyPath: m_Color.a
-      value: 0.015686275
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4841786385252877494, guid: 5aabbb8ace950d84babd60199b1600e7, type: 3}
       propertyPath: m_Pivot.x
