@@ -15,6 +15,7 @@ public class CubeMovement : MonoBehaviour
     public bool allowMoveBack = false;
 
     public Vector3 originalPosition;
+    public Vector3 destination;
     private float lastTick = 0;
     private float interval = 0;
     private MeshRenderer meshRenderer;
@@ -28,7 +29,7 @@ public class CubeMovement : MonoBehaviour
 
     void Start()
     {
-        originalPosition = transform.position;
+        destination = originalPosition = transform.position;
         interval = Random.Range(moveInterval.x, moveInterval.y);
         
         height = transform.position.y;
@@ -71,7 +72,7 @@ public class CubeMovement : MonoBehaviour
 
     void CheckDeath()
     {
-        if(transform.position.y <= -9.99)
+        if(transform.position.y <= originalPosition.y - 29)
         {
             Destroy(gameObject);
             return;
@@ -81,7 +82,7 @@ public class CubeMovement : MonoBehaviour
         if(Time.realtimeSinceStartup - GameStuff.initialtime > currentLifeTime)
         {
             died = true;
-            StartCoroutine(Translate(new Vector3(transform.position.x, -10, transform.position.z)));
+            destination = new Vector3(transform.position.x, transform.position.y - 30, transform.position.z);
         }
     }
 
@@ -103,6 +104,7 @@ public class CubeMovement : MonoBehaviour
 
         if(!meshRenderer.isVisible)
         {
+            transform.position = destination;
             return;
         }
 
@@ -155,20 +157,17 @@ public class CubeMovement : MonoBehaviour
 
         int index = Random.Range(0, count);
         Vector3 direction = possibleMoves[index];
-        StartCoroutine(Translate(transform.position + (direction * movement)));
+        destination = transform.position + (direction * movement);
     }
 
-    IEnumerator Translate(Vector3 destination)
+    void FixedUpdate()
     {
-        float elapsedTime = 0;
-        while(elapsedTime < 1 && transform.position.y > -10)
+        if(transform.position != destination)
         {
-            elapsedTime += Time.deltaTime;
-            float x = Mathf.Lerp(transform.position.x, destination.x, elapsedTime);
-            float y = Mathf.Lerp(transform.position.y, destination.y, elapsedTime);
-            float z = Mathf.Lerp(transform.position.z, destination.z, elapsedTime);
+            float x = Mathf.Lerp(transform.position.x, destination.x, 0.07f);
+            float y = Mathf.Lerp(transform.position.y, destination.y, 0.07f);
+            float z = Mathf.Lerp(transform.position.z, destination.z, 0.07f);
             transform.position = new Vector3(x, y, z);
-            yield return null;
         }
     }
 

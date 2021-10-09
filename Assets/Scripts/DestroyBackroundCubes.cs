@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class DestroyBackroundCubes : MonoBehaviour
 {
-    Transform player;
-
     Vector3 initialPos;
     Vector3 destination;
     float elapsed = 0;
@@ -12,7 +10,6 @@ public class DestroyBackroundCubes : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
         initialPos = transform.position;
         destination = initialPos + (Vector3.up * Random.Range(0, 5) * (Random.value >= 0.5f ? 1 : -1));
         timer = Random.Range(1, 5);
@@ -20,7 +17,7 @@ public class DestroyBackroundCubes : MonoBehaviour
 
     void FixedUpdate()
     {
-        if((player.position.y - transform.position.y) > 35)
+        if((GameStuff.player.transform.position.y - transform.position.y) > 35)
         {
             Destroy(gameObject);
             return;
